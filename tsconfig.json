@@ -10,7 +10,7 @@
     "rootDir": "src",
     "outDir": "build",
     "module": "commonjs",
-    "target": "es5",
+    "target": "es6",
     "moduleResolution": "node",
     "noImplicitReturns": true,
     "noImplicitThis": true,
@@ -23,6 +23,10 @@
     "noFallthroughCasesInSwitch": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "lib": ["es6"]
+    "lib": ["es6"],
+    "typeRoots": [
+      "./src/types",
+      "./node_modules/@types",
+    ]
   }
 }
