@@ -8,7 +8,7 @@ type OpenApiConfig = {
 };
 
 class CustomApi extends OpenAPI {
-  token: string;
+  private readonly token: string;
 
   constructor(config: OpenApiConfig) {
     const { secretToken } = config;

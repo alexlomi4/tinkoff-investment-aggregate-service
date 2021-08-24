@@ -5,7 +5,10 @@ import {
   Operation,
   PortfolioPosition,
 } from 'tinkoff-investment-js-client-api';
-import { PortfolioPositionMap, PositionWithPrices } from '../types/investment';
+import {
+  PortfolioPositionMap,
+  PositionWithPrices,
+} from '../types/InvestmentService';
 
 export function instrumentToEmptyPosition(
   { figi, ticker, isin, type, name }: MarketInstrument,

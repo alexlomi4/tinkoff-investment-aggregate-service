@@ -13,7 +13,7 @@ import {
   PortfolioPositionMap,
   PositionMapWithPrices,
   Totals,
-} from '../types/investment';
+} from '../types/InvestmentService';
 import {
   convertPositionsWithPrice,
   currencyPositionToPortfolioPosition,
@@ -158,7 +158,7 @@ class InvestmentService {
     return accounts;
   }
 
-  static async getAccountIds(api: CustomApi): Promise<string[]> {
+  private static async getAccountIds(api: CustomApi): Promise<string[]> {
     const accounts = await this.getAccounts(api);
     return accounts.map(({ brokerAccountId }) => brokerAccountId);
   }
@@ -177,7 +177,7 @@ class InvestmentService {
     );
   }
 
-  static async getPositionsWithOperations(
+  private static async getPositionsWithOperations(
     api: CustomApi,
     accountIds: string[]
   ): Promise<[PortfolioPositionMap, Operation[][]]> {
@@ -373,3 +373,5 @@ class InvestmentService {
 }
 
 export default InvestmentService;
+
+export { CustomApi };

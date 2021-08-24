@@ -2,7 +2,12 @@
   "name": "tinkoff-investment-aggregate-service",
   "version": "1.0.0",
   "description": "Service to aggregate investment statistics",
+  "main": "./build/service/InvestmentService.js",
+  "types": "./build/types/InvestmentService.d.ts",
   "scripts": {
+    "prepare": "npm run build && npm run copy-files",
+    "build": "tsc",
+    "copy-files": "copyfiles -u 1 src/types/InvestmentService.d.ts build",
     "lint": "eslint . --ext .ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,6 +23,7 @@
     "@types/jest": "^27.0.1",
     "@typescript-eslint/eslint-plugin": "^4.29.3",
     "@typescript-eslint/parser": "^4.29.3",
+    "copyfiles": "^2.4.1",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-airbnb-typescript": "^14.0.0",
