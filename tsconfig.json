@@ -1,0 +1,28 @@
+{
+  "exclude": [
+    "node_modules",
+    "build",
+  ],
+  "include": [
+    "src/**/*"
+  ],
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "build",
+    "module": "esnext",
+    "target": "es5",
+    "moduleResolution": "node",
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "lib": ["es6"],
+  }
+}

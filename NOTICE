@@ -1,0 +1,11 @@
+This software contains library tinkoff-investment-js-client-api derived from the invest-openapi-js-sdk project (https://github.com/TinkoffCreditSystems/invest-openapi-js-sdk),
+available under the Apache 2.0 license (https://github.com/TinkoffCreditSystems/invest-openapi-js-sdk/blob/master/LICENSE).
+
+tinkoff-investment-js-client-api changes:
+1. src/OpenAPI.ts
+  - comment Streaming functionality
+  - node specific api is removed
+2. package.json
+  - axios is added
+  - name of package
+3. README.md is updated

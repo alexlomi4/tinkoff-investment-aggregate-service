@@ -1,0 +1,30 @@
+{
+  "name": "tinkoff-investment-aggregate-service",
+  "version": "1.0.0",
+  "description": "service to aggregate investment statistics",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexlomi4/tinkoff-investment-aggregate-service"
+  },
+  "author": "alexlomi4",
+  "dependencies": {
+    "tinkoff-investment-js-client-api": "git+https://github.com/alexlomi4/tinkoff-investment-js-client-api.git"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.29.3",
+    "@typescript-eslint/parser": "^4.29.3",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-typescript": "^14.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.1",
+    "eslint-plugin-jest": "^24.4.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "jest": "^27.0.6",
+    "prettier": "^2.3.2",
+    "typescript": "^4.3.5"
+  }
+}
