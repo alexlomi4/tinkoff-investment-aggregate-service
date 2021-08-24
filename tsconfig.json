@@ -23,6 +23,6 @@
     "noFallthroughCasesInSwitch": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "lib": ["es6"],
+    "lib": ["es6"]
   }
 }
