@@ -159,7 +159,7 @@ class InvestmentService {
   }
 
   private static async getAccountIds(api: CustomApi): Promise<string[]> {
-    const accounts = await this.getAccounts(api);
+    const accounts = await InvestmentService.getAccounts(api);
     return accounts.map(({ brokerAccountId }) => brokerAccountId);
   }
 
@@ -198,7 +198,7 @@ class InvestmentService {
         () =>
           Promise.all([
             api.portfolio(),
-            this.getOperations(api),
+            InvestmentService.getOperations(api),
             api.portfolioCurrencies(),
           ]),
         api.getKeyForRequest(`positionsAndOperations_${accountIds[i]}`)
@@ -250,8 +250,8 @@ class InvestmentService {
   static async getHistoricPositions(
     api: CustomApi
   ): Promise<PositionMapWithPrices> {
-    const accountIds = await this.getAccountIds(api);
-    return this.getHistoricPositionsByIds(api, accountIds);
+    const accountIds = await InvestmentService.getAccountIds(api);
+    return InvestmentService.getHistoricPositionsByIds(api, accountIds);
   }
 
   static async getHistoricPositionsByIds(
@@ -263,7 +263,7 @@ class InvestmentService {
     const historicOperations = operations.map((operationsForAcc) =>
       operationsForAcc.filter(({ figi }) => figi && !positionMap[figi])
     ) as OperationWithFigi[][];
-    const currenciesInfo = await this.getCurrenciesInfo(
+    const currenciesInfo = await InvestmentService.getCurrenciesInfo(
       api,
       ([] as Operation[])
         .concat(...historicOperations)
@@ -305,8 +305,8 @@ class InvestmentService {
   static async getCurrentPositions(
     api: CustomApi
   ): Promise<PositionMapWithPrices> {
-    const accountIds = await this.getAccountIds(api);
-    return this.getCurrentPositionsByIds(api, accountIds);
+    const accountIds = await InvestmentService.getAccountIds(api);
+    return InvestmentService.getCurrentPositionsByIds(api, accountIds);
   }
 
   static async getCurrentPositionsByIds(
@@ -316,7 +316,7 @@ class InvestmentService {
     const [positionsMap, operations] =
       await InvestmentService.getPositionsWithOperations(api, accountIds);
 
-    const currenciesInfo = await this.getCurrenciesInfo(
+    const currenciesInfo = await InvestmentService.getCurrenciesInfo(
       api,
       ([] as Operation[]).concat(...operations).map(({ currency }) => currency)
     );
@@ -324,22 +324,20 @@ class InvestmentService {
   }
 
   static async getTotal(api: CustomApi): Promise<Totals> {
-    const accountIds = await this.getAccountIds(api);
-    return this.getTotalByIds(api, accountIds);
+    const accountIds = await InvestmentService.getAccountIds(api);
+    return InvestmentService.getTotalByIds(api, accountIds);
   }
 
   static async getTotalByIds(
     api: CustomApi,
     accountIds: string[]
   ): Promise<Totals> {
-    const [positionMap, operations] = await this.getPositionsWithOperations(
-      api,
-      accountIds
-    );
+    const [positionMap, operations] =
+      await InvestmentService.getPositionsWithOperations(api, accountIds);
     const flatOperations: Operation[] = ([] as Operation[]).concat(
       ...operations
     );
-    const currenciesInfo = await this.getCurrenciesInfo(
+    const currenciesInfo = await InvestmentService.getCurrenciesInfo(
       api,
       Array.from(new Set(flatOperations.map(({ currency }) => currency)))
     );

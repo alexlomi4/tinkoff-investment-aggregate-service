@@ -1,5 +1,5 @@
 // eslint-disable-next-line max-classes-per-file
-import {
+import OpenAPI, {
   Currency,
   Operation,
   PortfolioPosition,
@@ -43,7 +43,7 @@ declare type OpenApiConfig = {
   brokerAccountId?: string;
 };
 
-export class CustomApi {
+export class CustomApi extends OpenAPI {
   private readonly token: string;
 
   constructor(config: OpenApiConfig);
