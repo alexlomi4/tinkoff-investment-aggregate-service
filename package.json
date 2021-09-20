@@ -4,6 +4,9 @@
   "description": "Service to aggregate investment statistics",
   "main": "./build/cjs/index.js",
   "module": "./build/esm/index.js",
+  "files": [
+    "build/"
+  ],
   "scripts": {
     "prepare": "npm run build",
     "build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
