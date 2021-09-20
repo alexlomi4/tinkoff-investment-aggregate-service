@@ -1,0 +1,408 @@
+[
+  {
+    "figi": "BBG002NLDLV8",
+    "ticker": "VIPS",
+    "isin": "US92763W1036",
+    "instrumentType": "Stock",
+    "balance": 2,
+    "lots": 2,
+    "expectedYield": {
+      "currency": "USD",
+      "value": -1.75
+    },
+    "averagePositionPrice": {
+      "currency": "USD",
+      "value": 13.08
+    },
+    "name": "Vipshop"
+  },
+  {
+    "figi": "BBG000QXWHD1",
+    "ticker": "BIDU",
+    "isin": "US0567521085",
+    "instrumentType": "Stock",
+    "balance": 3,
+    "lots": 3,
+    "expectedYield": {
+      "currency": "USD",
+      "value": -24.16
+    },
+    "averagePositionPrice": {
+      "currency": "USD",
+      "value": 162.45
+    },
+    "name": "Baidu"
+  },
+  {
+    "figi": "BBG006G2JVL2",
+    "ticker": "BABA",
+    "isin": "US01609W1027",
+    "instrumentType": "Stock",
+    "balance": 2,
+    "lots": 2,
+    "expectedYield": {
+      "currency": "USD",
+      "value": -129.89
+    },
+    "averagePositionPrice": {
+      "currency": "USD",
+      "value": 216.1
+    },
+    "name": "Alibaba"
+  },
+  {
+    "figi": "BBG000MM2P62",
+    "ticker": "FB",
+    "isin": "US30303M1027",
+    "instrumentType": "Stock",
+    "balance": 1,
+    "lots": 1,
+    "expectedYield": {
+      "currency": "USD",
+      "value": -27.15
+    },
+    "averagePositionPrice": {
+      "currency": "USD",
+      "value": 382.7
+    },
+    "name": "Facebook"
+  },
+  {
+    "figi": "BBG000B9XRY4",
+    "ticker": "AAPL",
+    "isin": "US0378331005",
+    "instrumentType": "Stock",
+    "balance": 2,
+    "lots": 2,
+    "expectedYield": {
+      "currency": "USD",
+      "value": -0.67
+    },
+    "averagePositionPrice": {
+      "currency": "USD",
+      "value": 143.34
+    },
+    "name": "Apple"
+  },
+  {
+    "figi": "BBG000BBWF85",
+    "ticker": "BAYN@DE",
+    "isin": "DE000BAY0017",
+    "instrumentType": "Stock",
+    "balance": 1,
+    "lots": 1,
+    "expectedYield": {
+      "currency": "EUR",
+      "value": -1.78
+    },
+    "averagePositionPrice": {
+      "currency": "EUR",
+      "value": 47.05
+    },
+    "name": "Bayer"
+  },
+  {
+    "figi": "BBG000BQNNP6",
+    "ticker": "LOGI",
+    "isin": "CH0025751329",
+    "instrumentType": "Stock",
+    "balance": 1,
+    "lots": 1,
+    "expectedYield": {
+      "currency": "USD",
+      "value": -7.52
+    },
+    "averagePositionPrice": {
+      "currency": "USD",
+      "value": 102.55
+    },
+    "name": "Logitech International SA"
+  },
+  {
+    "figi": "BBG00HTN2CQ3",
+    "ticker": "SPCE",
+    "isin": "US92766K1060",
+    "instrumentType": "Stock",
+    "balance": 7,
+    "lots": 7,
+    "expectedYield": {
+      "currency": "USD",
+      "value": -16.87
+    },
+    "averagePositionPrice": {
+      "currency": "USD",
+      "value": 27.19
+    },
+    "name": "Virgin Galactic Holdings Inc Class A"
+  },
+  {
+    "figi": "BBG00ZGF7771",
+    "ticker": "COIN",
+    "isin": "US19260Q1076",
+    "instrumentType": "Stock",
+    "balance": 2,
+    "lots": 2,
+    "expectedYield": {
+      "currency": "USD",
+      "value": -40.86
+    },
+    "averagePositionPrice": {
+      "currency": "USD",
+      "value": 255.58
+    },
+    "name": "Coinbase"
+  },
+  {
+    "figi": "BBG000BWNFZ9",
+    "ticker": "WDC",
+    "isin": "US9581021055",
+    "instrumentType": "Stock",
+    "balance": 2,
+    "lots": 2,
+    "expectedYield": {
+      "currency": "USD",
+      "value": -19.12
+    },
+    "averagePositionPrice": {
+      "currency": "USD",
+      "value": 66.44
+    },
+    "name": "Western Digital"
+  },
+  {
+    "figi": "BBG000BPH459",
+    "ticker": "MSFT",
+    "isin": "US5949181045",
+    "instrumentType": "Stock",
+    "balance": 1,
+    "lots": 1,
+    "expectedYield": {
+      "currency": "USD",
+      "value": -10.28
+    },
+    "averagePositionPrice": {
+      "currency": "USD",
+      "value": 304.48
+    },
+    "name": "Microsoft Corporation"
+  },
+  {
+    "figi": "BBG000VG1034",
+    "ticker": "MRKP",
+    "isin": "RU000A0JPN96",
+    "instrumentType": "Stock",
+    "balance": 10000,
+    "lots": 1,
+    "expectedYield": {
+      "currency": "RUB",
+      "value": -329
+    },
+    "averagePositionPrice": {
+      "currency": "RUB",
+      "value": 0.291
+    },
+    "name": "МРСК Центра и Приволжья"
+  },
+  {
+    "figi": "BBG004730N88",
+    "ticker": "SBER",
+    "isin": "RU0009029540",
+    "instrumentType": "Stock",
+    "balance": 10,
+    "lots": 1,
+    "expectedYield": {
+      "currency": "RUB",
+      "value": 120.8
+    },
+    "averagePositionPrice": {
+      "currency": "RUB",
+      "value": 314.84
+    },
+    "name": "Сбер Банк"
+  },
+  {
+    "figi": "BBG000BT7ZK6",
+    "ticker": "SONY",
+    "isin": "US8356993076",
+    "instrumentType": "Stock",
+    "balance": 1,
+    "lots": 1,
+    "expectedYield": {
+      "currency": "USD",
+      "value": 3.28
+    },
+    "averagePositionPrice": {
+      "currency": "USD",
+      "value": 103.74
+    },
+    "name": "Sony Corp"
+  },
+  {
+    "figi": "BBG0047315Y7",
+    "ticker": "SBERP",
+    "isin": "RU0009029557",
+    "instrumentType": "Stock",
+    "balance": 20,
+    "lots": 2,
+    "expectedYield": {
+      "currency": "RUB",
+      "value": 466.5
+    },
+    "averagePositionPrice": {
+      "currency": "RUB",
+      "value": 284.98
+    },
+    "name": "Сбер Банк - привилегированные акции"
+  },
+  {
+    "figi": "BBG004S681W1",
+    "ticker": "MTSS",
+    "isin": "RU0007775219",
+    "instrumentType": "Stock",
+    "balance": 40,
+    "lots": 4,
+    "expectedYield": {
+      "currency": "RUB",
+      "value": -316
+    },
+    "averagePositionPrice": {
+      "currency": "RUB",
+      "value": 335.9
+    },
+    "name": "МТС"
+  },
+  {
+    "figi": "BBG0016XJ8S0",
+    "ticker": "TAL",
+    "isin": "US8740801043",
+    "instrumentType": "Stock",
+    "balance": 59,
+    "lots": 59,
+    "expectedYield": {
+      "currency": "USD",
+      "value": -35.89
+    },
+    "averagePositionPrice": {
+      "currency": "USD",
+      "value": 4.93
+    },
+    "name": "TAL Education Group"
+  },
+  {
+    "figi": "BBG000BX72V8",
+    "ticker": "NTES",
+    "isin": "US64110W1027",
+    "instrumentType": "Stock",
+    "balance": 1,
+    "lots": 1,
+    "expectedYield": {
+      "currency": "USD",
+      "value": -6.87
+    },
+    "averagePositionPrice": {
+      "currency": "USD",
+      "value": 86.48
+    },
+    "name": "NetEase Inc"
+  },
+  {
+    "figi": "BBG000CVWGS6",
+    "ticker": "ATVI",
+    "isin": "US00507V1098",
+    "instrumentType": "Stock",
+    "balance": 1,
+    "lots": 1,
+    "expectedYield": {
+      "currency": "USD",
+      "value": -6.28
+    },
+    "averagePositionPrice": {
+      "currency": "USD",
+      "value": 82.86
+    },
+    "name": "Activision Blizzard"
+  },
+  {
+    "figi": "BBG000C5Z1S3",
+    "ticker": "MU",
+    "isin": "US5951121038",
+    "instrumentType": "Stock",
+    "balance": 2,
+    "lots": 2,
+    "expectedYield": {
+      "currency": "USD",
+      "value": -12.88
+    },
+    "averagePositionPrice": {
+      "currency": "USD",
+      "value": 78.81
+    },
+    "name": "Micron Technology"
+  },
+  {
+    "figi": "BBG004S68473",
+    "ticker": "IRAO",
+    "isin": "RU000A0JPNM1",
+    "instrumentType": "Stock",
+    "balance": 1000,
+    "lots": 10,
+    "expectedYield": {
+      "currency": "RUB",
+      "value": -480.1
+    },
+    "averagePositionPrice": {
+      "currency": "RUB",
+      "value": 4.984
+    },
+    "name": "Интер РАО ЕЭС"
+  },
+  {
+    "figi": "BBG000000002",
+    "ticker": "TEUR",
+    "isin": "RU000A1011T7",
+    "instrumentType": "Etf",
+    "balance": 8,
+    "lots": 8,
+    "expectedYield": {
+      "currency": "EUR",
+      "value": -0.02
+    },
+    "averagePositionPrice": {
+      "currency": "EUR",
+      "value": 0.1075
+    },
+    "name": "Тинькофф Вечный портфель EUR"
+  },
+  {
+    "figi": "BBG0013HJJ31",
+    "ticker": "EUR_RUB__TOM",
+    "instrumentType": "Currency",
+    "balance": 0.07,
+    "lots": 0,
+    "expectedYield": {
+      "currency": "RUB",
+      "value": -0.03
+    },
+    "averagePositionPrice": {
+      "currency": "RUB",
+      "value": 86.4525
+    },
+    "name": "Евро"
+  },
+  {
+    "figi": "BBG0013HGFT4",
+    "ticker": "USD000UTSTOM",
+    "instrumentType": "Currency",
+    "balance": 0.15,
+    "lots": 0,
+    "expectedYield": {
+      "currency": "RUB",
+      "value": 0.13
+    },
+    "averagePositionPrice": {
+      "currency": "RUB",
+      "value": 72.5425
+    },
+    "name": "Доллар США"
+  }
+]

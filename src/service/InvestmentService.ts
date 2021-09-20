@@ -1,369 +1,277 @@
 import {
-  Currencies,
-  Currency,
-  MarketInstrument,
+  CurrencyPosition,
   Operation,
-  Portfolio,
   PortfolioPosition,
   UserAccount,
-  UserAccounts,
 } from 'tinkoff-investment-js-client-api';
 import {
-  CurrencyInfo,
-  PortfolioPositionMap,
-  PositionMapWithPrices,
+  InstrumentPriceInfo,
+  PositionWithCurrency,
   Totals,
 } from '../types/model';
-import {
-  convertPositionsWithPrice,
-  currencyPositionToPortfolioPosition,
-  getFigiByCurrencies,
-  instrumentToEmptyPosition,
-  prepareEmptyPositions,
-} from './utils';
-import CashHelper from '../utils/CacheHelper';
 import CustomApi from './CustomApi';
+import {
+  getAggregatedCurrencyPositions,
+  getAggregatedInstrumentPositions,
+} from './utils/aggregate-utils';
+import {
+  getPortfolioTotals,
+  getUniqueFigiInfoByCurrency,
+} from './utils/price-utils';
 
-async function getPriceInformation(
-  api: CustomApi,
-  positionsMap: PortfolioPositionMap,
-  operations: Operation[][],
-  currenciesInfo: CurrencyInfo[]
-): Promise<PositionMapWithPrices> {
-  const figiPositions = await Promise.all(
-    Object.keys(positionsMap).map(async (figi) => {
-      // the same for any account
-      const firstPosition = positionsMap[figi][0];
-      const lastPrice = await getLastPrice(api, firstPosition, currenciesInfo);
-      return {
-        [figi]: convertPositionsWithPrice(
-          positionsMap[figi],
-          operations,
-          lastPrice
-        ),
-      };
-    })
-  );
+// type PositionsResponse = {
+//   positions: PositionWithPrices[];
+//   currencyPositions: CurrencyPosition[];
+// };
 
-  return figiPositions.reduce(
-    (obj, position) => ({
-      ...obj,
-      ...position,
-    }),
-    {}
-  ) as PositionMapWithPrices;
-}
+// async function getPriceInformation({
+//   api,
+//   positions,
+//   operations,
+//   currencyPositions,
+//   portfolioCurrencyPriceInfo,
+// }: {
+//   api: CustomApi;
+//   positions: PositionWithCurrency[];
+//   operations: Operation[];
+//   currencyPositions: CurrencyPosition[];
+//   portfolioCurrencyPriceInfo: InstrumentPriceInfo[];
+// }): Promise<PositionsResponse> {
+//   const positionsWithPrices = await Promise.all(
+//     positions.map(async (position) => {
+//       const { figi } = position;
+//       const lastPriceOfInstrument = await getLastPrice(
+//         api,
+//         position,
+//         portfolioCurrenciesInfo
+//       );
+//       return convertPositionWithPrice();
+//     })
+//   );
+//   return { positions: positionsWithPrices, currencyPositions };
+// }
 
-type OperationWithFigi = Operation & { figi: string };
+// type OperationWithFigi = Operation & { figi: string };
+//
+// async function getHistoricPositionsInfo(
+//   api: CustomApi,
+//   historicOperations: OperationWithFigi[][],
+//   currenciesInfo: CurrencyInfo[]
+// ) {
+//   let figis: string[] = [];
+//   const currencies: { [figi: string]: Currency } = {};
+//   const recordMap: PortfolioPositionMap = {};
+//   historicOperations.forEach((operationsForAcc) => {
+//     operationsForAcc.forEach((operation) => {
+//       const { figi } = operation;
+//       figis.push(figi);
+//       currencies[figi] = operation.currency;
+//     });
+//   });
+//
+//   figis = Array.from(new Set(figis));
+//   const instruments = (
+//     await Promise.all(figis.map((figi) => api.searchOne({ figi })))
+//   ).filter(Boolean) as MarketInstrument[];
+//
+//   instruments.forEach((instrument) => {
+//     const { figi } = instrument;
+//     const currency: Currency = currencies[figi];
+//     recordMap[figi] = new Array(historicOperations.length).fill(
+//       instrumentToEmptyPosition(instrument, currency)
+//     );
+//   });
+//   return getPriceInformation(
+//     api,
+//     recordMap,
+//     historicOperations,
+//     currenciesInfo
+//   );
+// }
 
-async function getHistoricPositionsInfo(
-  api: CustomApi,
-  historicOperations: OperationWithFigi[][],
-  currenciesInfo: CurrencyInfo[]
-) {
-  let figis: string[] = [];
-  const currencies: { [figi: string]: Currency } = {};
-  const recordMap: PortfolioPositionMap = {};
-  historicOperations.forEach((operationsForAcc) => {
-    operationsForAcc.forEach((operation) => {
-      const { figi } = operation;
-      figis.push(figi);
-      currencies[figi] = operation.currency;
-    });
-  });
-
-  figis = Array.from(new Set(figis));
-  const instruments = (
-    await Promise.all(figis.map((figi) => api.searchOne({ figi })))
-  ).filter(Boolean) as MarketInstrument[];
-
-  instruments.forEach((instrument) => {
-    const { figi } = instrument;
-    const currency: Currency = currencies[figi];
-    recordMap[figi] = new Array(historicOperations.length).fill(
-      instrumentToEmptyPosition(instrument, currency)
-    );
-  });
-  return getPriceInformation(
-    api,
-    recordMap,
-    historicOperations,
-    currenciesInfo
-  );
-}
-
-async function getLastPrice(
-  api: CustomApi,
-  position: PortfolioPosition,
-  currenciesInfo: CurrencyInfo[] | undefined = []
-) {
-  const { instrumentType, figi } = position;
-  let lastPrice: number;
-  if (instrumentType === 'Currency') {
-    // 1: RUB
-    ({ lastPrice = 1 } =
-      currenciesInfo.find(({ figi: currencyFigi }) => currencyFigi === figi) ||
-      {});
-  } else {
-    lastPrice = await CashHelper.withPromiseCache<number>(
-      async () => {
-        const { lastPrice: lastInstrumentPrice = 0 } = await api.orderbookGet({
-          figi,
-        });
-        return lastInstrumentPrice;
-      },
-      api.getKeyForRequest(`lastPrice_${figi}`),
-      3
-    );
-  }
-  return lastPrice;
-}
-
-async function getPortfolioNet(
-  api: CustomApi,
-  portfolio: PortfolioPositionMap,
-  currenciesInfo: CurrencyInfo[]
-): Promise<number> {
-  const instrumentNets: number[] = await Promise.all(
-    Object.keys(portfolio).map(async (figi) => {
-      const position = portfolio[figi][0];
-      const lastPriceOfInstrument = await getLastPrice(
-        api,
-        position,
-        currenciesInfo
-      );
-      return portfolio[figi].reduce(
-        (net, { balance, averagePositionPrice = {} }) => {
-          const currencyInfo = currenciesInfo.find(
-            ({ currency }) => currency === averagePositionPrice.currency
-          );
-          // 1: RUB currency
-          const { lastPrice: currencyPrice = 1 } = currencyInfo || {};
-          return net + balance * lastPriceOfInstrument * currencyPrice;
-        },
-        0
-      );
-    })
-  );
-  return instrumentNets.reduce((sum, val) => sum + val, 0);
-}
+// async function getLastPrice(
+//   api: CustomApi,
+//   position: PortfolioPosition,
+//   // this param is required because we load currency prices before this call
+//   currencyPriceInfo: InstrumentPriceInfo[]
+// ) {
+//   const { instrumentType, figi } = position;
+//   let lastPrice: number;
+//   if (instrumentType === 'Currency') {
+//     // lastPrice = 1 for RUB
+//     ({ lastPrice = 1 } =
+//       currencyPriceInfo.find(
+//         ({ figi: currencyFigi }) => currencyFigi === figi
+//       ) || {});
+//   } else {
+//     lastPrice = await api.getLastPrice(figi);
+//   }
+//   return lastPrice;
+// }
 
 class InvestmentService {
-  static async getAccounts(api: CustomApi): Promise<UserAccount[]> {
-    const { accounts } = await CashHelper.withPromiseCache<UserAccounts>(
-      () => api.accounts(),
-      api.getKeyForRequest('accounts')
-    );
-    return accounts;
+  private readonly api: CustomApi;
+
+  constructor(secretToken: string, isProd = true) {
+    this.api = new CustomApi({ isProd, secretToken });
   }
 
-  private static async getAccountIds(api: CustomApi): Promise<string[]> {
-    const accounts = await InvestmentService.getAccounts(api);
+  async getOperations(): Promise<Operation[]> {
+    return this.api.getOperations();
+  }
+
+  async getAccounts(): Promise<UserAccount[]> {
+    return this.api.getAccounts();
+  }
+
+  private async getAccountIds(): Promise<string[]> {
+    const accounts = await this.api.getAccounts();
     return accounts.map(({ brokerAccountId }) => brokerAccountId);
   }
 
-  static async getOperations(
-    api: CustomApi,
-    from: string = new Date('1970-01-01').toISOString()
-  ): Promise<Operation[]> {
-    const { operations } = await api.operations({
-      from,
-      to: new Date().toISOString(),
-    });
-    return operations.filter(
-      ({ status, operationType }) =>
-        status !== 'Decline' && operationType !== 'BrokerCommission'
-    );
-  }
-
-  private static async getPositionsWithOperations(
-    api: CustomApi,
-    accountIds: string[]
-  ): Promise<[PortfolioPositionMap, Operation[][]]> {
-    const operations: Operation[][] = [];
-    let positionMap: PortfolioPositionMap = {};
+  private async getPositionsWithOperations(accountIds: string[]): Promise<{
+    positions: PositionWithCurrency[];
+    currencyPositions: CurrencyPosition[];
+    operations: Operation[];
+  }> {
+    const operations: Operation[] = [];
+    const positions: PortfolioPosition[][] = [];
+    const currencyPositions: CurrencyPosition[][] = [];
     for (let i = 0; i < accountIds.length; i += 1) {
       // loop through all accounts to get all positions and operations
-      api.setCurrentAccountId(accountIds[i]);
+      this.api.setCurrentAccountId(accountIds[i]);
+
       // eslint-disable-next-line no-await-in-loop
       const [
-        { positions: currentAccPositions },
+        currentAccPositions,
         currentAccOperations,
-        { currencies: currentCurrencies },
+        currentAccCurrencies,
         // eslint-disable-next-line no-await-in-loop
-      ] = await CashHelper.withPromiseCache<
-        [Portfolio, Operation[], Currencies]
-      >(
-        () =>
-          Promise.all([
-            api.portfolio(),
-            InvestmentService.getOperations(api),
-            api.portfolioCurrencies(),
-          ]),
-        api.getKeyForRequest(`positionsAndOperations_${accountIds[i]}`)
-      );
+      ] = await Promise.all([
+        this.api.getPortfolio(),
+        this.api.getOperations(),
+        this.api.getPortfolioCurrencies(),
+      ]);
 
-      positionMap = currentAccPositions
-        .filter(({ instrumentType }) => instrumentType !== 'Currency')
-        .reduce((positionMapAcc: PortfolioPositionMap, { figi, ...rest }) => {
-          const positions =
-            positionMapAcc[figi] || Array(operations.length).fill(undefined);
-          positions[i] = { figi, ...rest };
-          return {
-            ...positionMapAcc,
-            [figi]: positions,
-          };
-        }, positionMap);
-      const currencyFigis = getFigiByCurrencies(
-        currentCurrencies.map(({ currency }) => currency)
+      positions[i] = currentAccPositions.filter(
+        ({ instrumentType }) => instrumentType !== 'Currency'
       );
-      positionMap = currentCurrencies.reduce(
-        (positionMapAcc: PortfolioPositionMap, { currency, balance }) => {
-          const { figi } =
-            currencyFigis.find(
-              ({ currency: currencyByFigi }) => currency === currencyByFigi
-            ) || {};
-          const currencyPosition = currentAccPositions.find(
-            ({ figi: positionFigi }) => positionFigi === figi
-          );
-          const key = figi || currency;
-          return {
-            ...positionMapAcc,
-            [key]: [
-              ...(positionMapAcc[key] || []),
-              currencyPositionToPortfolioPosition(
-                { currency, balance },
-                figi,
-                currencyPosition
-              ),
-            ],
-          };
-        },
-        positionMap
-      );
-      operations.push(currentAccOperations);
+      currencyPositions[i] = currentAccCurrencies;
+      operations.push(...currentAccOperations);
     }
-    return [prepareEmptyPositions(positionMap, operations), operations];
-  }
-
-  static async getHistoricPositions(
-    api: CustomApi
-  ): Promise<PositionMapWithPrices> {
-    const accountIds = await InvestmentService.getAccountIds(api);
-    return InvestmentService.getHistoricPositionsByIds(api, accountIds);
-  }
-
-  static async getHistoricPositionsByIds(
-    api: CustomApi,
-    accountIds: string[]
-  ): Promise<PositionMapWithPrices> {
-    const [positionMap, operations] =
-      await InvestmentService.getPositionsWithOperations(api, accountIds);
-    const historicOperations = operations.map((operationsForAcc) =>
-      operationsForAcc.filter(({ figi }) => figi && !positionMap[figi])
-    ) as OperationWithFigi[][];
-    const currenciesInfo = await InvestmentService.getCurrenciesInfo(
-      api,
-      ([] as Operation[])
-        .concat(...historicOperations)
-        .map(({ currency }) => currency)
-    );
-    return getHistoricPositionsInfo(api, historicOperations, currenciesInfo);
-  }
-
-  static async getCurrenciesInfo(
-    api: CustomApi,
-    currenciesList: Currency[]
-  ): Promise<CurrencyInfo[]> {
-    if (!Array.isArray(currenciesList) || !currenciesList.length) {
-      return [];
-    }
-    const currenciesWithFigi = getFigiByCurrencies(currenciesList);
-    return Promise.all(
-      currenciesWithFigi.map(async ({ figi, currency }) =>
-        // TODO check if it should be another value
-        CashHelper.withPromiseCache<CurrencyInfo>(
-          async () => {
-            const { lastPrice } = await api.orderbookGet({
-              figi,
-            });
-            return { figi, currency, lastPrice };
-          },
-          api.getKeyForRequest(`currency_${figi}`),
-          3
-        )
-      )
-    );
-  }
-
-  static async getCurrentPositions(
-    api: CustomApi
-  ): Promise<PositionMapWithPrices> {
-    const accountIds = await InvestmentService.getAccountIds(api);
-    return InvestmentService.getCurrentPositionsByIds(api, accountIds);
-  }
-
-  static async getCurrentPositionsByIds(
-    api: CustomApi,
-    accountIds: string[]
-  ): Promise<PositionMapWithPrices> {
-    const [positionsMap, operations] =
-      await InvestmentService.getPositionsWithOperations(api, accountIds);
-
-    const currenciesInfo = await InvestmentService.getCurrenciesInfo(
-      api,
-      ([] as Operation[]).concat(...operations).map(({ currency }) => currency)
-    );
-    return getPriceInformation(api, positionsMap, operations, currenciesInfo);
-  }
-
-  static async getTotal(api: CustomApi): Promise<Totals> {
-    const accountIds = await InvestmentService.getAccountIds(api);
-    return InvestmentService.getTotalByIds(api, accountIds);
-  }
-
-  static async getTotalByIds(
-    api: CustomApi,
-    accountIds: string[]
-  ): Promise<Totals> {
-    const [positionMap, operations] =
-      await InvestmentService.getPositionsWithOperations(api, accountIds);
-    const flatOperations: Operation[] = ([] as Operation[]).concat(
-      ...operations
-    );
-    const currenciesInfo = await InvestmentService.getCurrenciesInfo(
-      api,
-      Array.from(new Set(flatOperations.map(({ currency }) => currency)))
-    );
-    const instrumentsNet = await getPortfolioNet(
-      api,
-      positionMap,
-      currenciesInfo
-    );
-
-    const totalOperationCost = flatOperations.reduce(
-      (total, { operationType, payment }) => {
-        switch (operationType) {
-          case 'PayIn':
-          case 'PayOut':
-            return total + payment;
-          default:
-            return total;
-        }
-      },
-      0
-    );
-
-    const netTotal = instrumentsNet - totalOperationCost;
-
     return {
-      totalPayIn: totalOperationCost,
-      netTotal: instrumentsNet - totalOperationCost,
-      percent: (netTotal / totalOperationCost) * 100,
+      operations,
+      positions: getAggregatedInstrumentPositions(positions),
+      currencyPositions: getAggregatedCurrencyPositions(currencyPositions),
     };
+  }
+
+  // async getHistoricPositions(
+  //   brokerAccountId?: string
+  // ): Promise<PositionMapWithPrices> {
+  //   const accountIds = brokerAccountId
+  //     ? [brokerAccountId]
+  //     : await this.getAccountIds();
+  //
+  //   const [positionMap, operations] = await this.getPositionsWithOperations(
+  //     accountIds
+  //   );
+  //   const historicOperations = operations.map((operationsForAcc) =>
+  //     operationsForAcc.filter(({ figi }) => figi && !positionMap[figi])
+  //   ) as OperationWithFigi[][];
+  //   const currenciesInfo = await this.getCurrencyInfo(
+  //     ([] as Operation[])
+  //       .concat(...historicOperations)
+  //       .map(({ currency }) => currency)
+  //   );
+  //   return getHistoricPositionsInfo(
+  //     this.api,
+  //     historicOperations,
+  //     currenciesInfo
+  //   );
+  // }
+
+  // private async getPositionsPriceInfomation({
+  //   operations,
+  //   positions,
+  // }: {
+  //   operations: Operation[];
+  //   positions: PositionWithCurrency[];
+  // }) {}
+  //
+  // // async getCurrentPositions(
+  // //   brokerAccountId?: string
+  // // ): Promise<PositionsResponse> {
+  // //   const accountIds = brokerAccountId
+  // //     ? [brokerAccountId]
+  // //     : await this.getAccountIds();
+  // //
+  // //   const { positions, operations, currencyPositions } =
+  // //     await this.getPositionsWithOperations(accountIds);
+  // //   const portfolioCurrencyPriceInfo =
+  // //     await this.getPortfolioInstrumentsPriceInfo(
+  // //       operations,
+  // //       currencyPositions
+  // //     );
+  // //
+  // //   return getPriceInformation({
+  // //     api: this.api,
+  // //     positions,
+  // //     operations,
+  // //     currencyPositions,
+  // //     portfolioCurrencyPriceInfo,
+  // //   });
+  // // }
+
+  private async getPortfolioInstrumentsPriceInfo({
+    operations,
+    positions,
+    currencyPositions,
+  }: {
+    operations: Operation[];
+    positions: PositionWithCurrency[];
+    currencyPositions: CurrencyPosition[];
+  }): Promise<InstrumentPriceInfo[]> {
+    const currencyFigis = getUniqueFigiInfoByCurrency(
+      // currencies of portfolio operations / instruments + portfolio currency positions
+      [
+        ...operations.map(({ currency }) => currency),
+        ...currencyPositions.map(({ currency }) => currency),
+      ]
+    ).map(({ figi }) => figi);
+    const instrumentFigis = positions.map(({ figi }) => figi);
+    const figis = [...currencyFigis, ...instrumentFigis];
+
+    return Promise.all(
+      figis.map(async (figi) => {
+        const lastPrice = await this.api.getLastPrice(figi);
+        return { figi, lastPrice };
+      })
+    );
+  }
+
+  async getTotal(brokerAccountId?: string): Promise<Totals> {
+    const accountIds = brokerAccountId
+      ? [brokerAccountId]
+      : await this.getAccountIds();
+
+    const { positions, operations, currencyPositions } =
+      await this.getPositionsWithOperations(accountIds);
+
+    const portfolioInstrumentsPriceInfo =
+      await this.getPortfolioInstrumentsPriceInfo({
+        operations,
+        positions,
+        currencyPositions,
+      });
+
+    return getPortfolioTotals({
+      portfolioInstrumentsPriceInfo,
+      operations,
+      positions,
+      currencyPositions,
+    });
   }
 }
 
 export default InvestmentService;
-
-export { CustomApi };

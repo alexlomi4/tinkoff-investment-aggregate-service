@@ -1,0 +1,345 @@
+[
+  {
+    "figi": "BBG002NLDLV8",
+    "ticker": "VIPS",
+    "isin": "US92763W1036",
+    "instrumentType": "Stock",
+    "balance": 6,
+    "lots": 6,
+    "expectedYield": {
+      "currency": "USD",
+      "value": -34.4
+    },
+    "averagePositionPrice": {
+      "currency": "USD",
+      "value": 17.93
+    },
+    "name": "Vipshop"
+  },
+  {
+    "figi": "BBG000QXWHD1",
+    "ticker": "BIDU",
+    "isin": "US0567521085",
+    "instrumentType": "Stock",
+    "balance": 2,
+    "lots": 2,
+    "expectedYield": {
+      "currency": "USD",
+      "value": -41.81
+    },
+    "averagePositionPrice": {
+      "currency": "USD",
+      "value": 175.24
+    },
+    "name": "Baidu"
+  },
+  {
+    "figi": "BBG000R7Z112",
+    "ticker": "DAL",
+    "isin": "US2473617023",
+    "instrumentType": "Stock",
+    "balance": 1,
+    "lots": 1,
+    "expectedYield": {
+      "currency": "USD",
+      "value": -2.29
+    },
+    "averagePositionPrice": {
+      "currency": "USD",
+      "value": 42.89
+    },
+    "name": "Delta Air Lines"
+  },
+  {
+    "figi": "BBG00HTN2CQ3",
+    "ticker": "SPCE",
+    "isin": "US92766K1060",
+    "instrumentType": "Stock",
+    "balance": 3,
+    "lots": 3,
+    "expectedYield": {
+      "currency": "USD",
+      "value": -27.99
+    },
+    "averagePositionPrice": {
+      "currency": "USD",
+      "value": 34.09
+    },
+    "name": "Virgin Galactic Holdings Inc Class A"
+  },
+  {
+    "figi": "BBG00ZGF7771",
+    "ticker": "COIN",
+    "isin": "US19260Q1076",
+    "instrumentType": "Stock",
+    "balance": 3,
+    "lots": 3,
+    "expectedYield": {
+      "currency": "USD",
+      "value": -47.06
+    },
+    "averagePositionPrice": {
+      "currency": "USD",
+      "value": 251.19
+    },
+    "name": "Coinbase"
+  },
+  {
+    "figi": "BBG004S681B4",
+    "ticker": "NLMK",
+    "isin": "RU0009046452",
+    "instrumentType": "Stock",
+    "balance": 20,
+    "lots": 2,
+    "expectedYield": {
+      "currency": "RUB",
+      "value": -606
+    },
+    "averagePositionPrice": {
+      "currency": "RUB",
+      "value": 242.66
+    },
+    "name": "НЛМК"
+  },
+  {
+    "figi": "BBG000BPWXK1",
+    "ticker": "NEM",
+    "isin": "US6516391066",
+    "instrumentType": "Stock",
+    "balance": 1,
+    "lots": 1,
+    "expectedYield": {
+      "currency": "USD",
+      "value": -2.86
+    },
+    "averagePositionPrice": {
+      "currency": "USD",
+      "value": 56.94
+    },
+    "name": "Newmont Goldcorp Corporation"
+  },
+  {
+    "figi": "BBG004S681W1",
+    "ticker": "MTSS",
+    "isin": "RU0007775219",
+    "instrumentType": "Stock",
+    "balance": 20,
+    "lots": 2,
+    "expectedYield": {
+      "currency": "RUB",
+      "value": -255
+    },
+    "averagePositionPrice": {
+      "currency": "RUB",
+      "value": 340.75
+    },
+    "name": "МТС"
+  },
+  {
+    "figi": "BBG0016XJ8S0",
+    "ticker": "TAL",
+    "isin": "US8740801043",
+    "instrumentType": "Stock",
+    "balance": 9,
+    "lots": 9,
+    "expectedYield": {
+      "currency": "USD",
+      "value": -8.7
+    },
+    "averagePositionPrice": {
+      "currency": "USD",
+      "value": 5.3
+    },
+    "name": "TAL Education Group"
+  },
+  {
+    "figi": "BBG000BX72V8",
+    "ticker": "NTES",
+    "isin": "US64110W1027",
+    "instrumentType": "Stock",
+    "balance": 2,
+    "lots": 2,
+    "expectedYield": {
+      "currency": "USD",
+      "value": -29.56
+    },
+    "averagePositionPrice": {
+      "currency": "USD",
+      "value": 94.99
+    },
+    "name": "NetEase Inc"
+  },
+  {
+    "figi": "BBG002WLDMW5",
+    "ticker": "COUR",
+    "isin": "US22266M1045",
+    "instrumentType": "Stock",
+    "balance": 1,
+    "lots": 1,
+    "expectedYield": {
+      "currency": "USD",
+      "value": -3.67
+    },
+    "averagePositionPrice": {
+      "currency": "USD",
+      "value": 40.76
+    },
+    "name": "Coursera, Inc."
+  },
+  {
+    "figi": "BBG006G2JVL2",
+    "ticker": "BABA",
+    "isin": "US01609W1027",
+    "instrumentType": "Stock",
+    "balance": 3,
+    "lots": 3,
+    "expectedYield": {
+      "currency": "USD",
+      "value": -47.75
+    },
+    "averagePositionPrice": {
+      "currency": "USD",
+      "value": 167.18
+    },
+    "name": "Alibaba"
+  },
+  {
+    "figi": "BBG000CHWP52",
+    "ticker": "DISCA",
+    "isin": "US25470F1049",
+    "instrumentType": "Stock",
+    "balance": 1,
+    "lots": 1,
+    "expectedYield": {
+      "currency": "USD",
+      "value": -2.14
+    },
+    "averagePositionPrice": {
+      "currency": "USD",
+      "value": 28.14
+    },
+    "name": "Discovery Communications (A)"
+  },
+  {
+    "figi": "BBG00NHJGKN2",
+    "ticker": "RU000A1004K1",
+    "isin": "RU000A1004K1",
+    "instrumentType": "Bond",
+    "balance": 12,
+    "lots": 12,
+    "expectedYield": {
+      "currency": "RUB",
+      "value": -210
+    },
+    "averagePositionPrice": {
+      "currency": "RUB",
+      "value": 1000.7
+    },
+    "averagePositionPriceNoNkd": {
+      "currency": "RUB",
+      "value": 995
+    },
+    "name": "Европлан БО 05"
+  },
+  {
+    "figi": "BBG111111111",
+    "ticker": "TECH",
+    "isin": "RU000A101X68",
+    "instrumentType": "Etf",
+    "balance": 100,
+    "lots": 1,
+    "expectedYield": {
+      "currency": "USD",
+      "value": 0.02
+    },
+    "averagePositionPrice": {
+      "currency": "USD",
+      "value": 0.1141
+    },
+    "name": "Тинькофф NASDAQ"
+  },
+  {
+    "figi": "TCS00A102EQ8",
+    "ticker": "TSPX",
+    "isin": "RU000A102EQ8",
+    "instrumentType": "Etf",
+    "balance": 1500,
+    "lots": 15,
+    "expectedYield": {
+      "currency": "USD",
+      "value": 7.56
+    },
+    "averagePositionPrice": {
+      "currency": "USD",
+      "value": 0.1062
+    },
+    "name": "Тинькофф S&P 500"
+  },
+  {
+    "figi": "TCS00A1039P6",
+    "ticker": "TGRN",
+    "isin": "RU000A1039P6",
+    "instrumentType": "Etf",
+    "balance": 500,
+    "lots": 5,
+    "expectedYield": {
+      "currency": "USD",
+      "value": -1.31
+    },
+    "averagePositionPrice": {
+      "currency": "USD",
+      "value": 0.0914
+    },
+    "name": "Тинькофф Green Economy"
+  },
+  {
+    "figi": "TCS00A102EK1",
+    "ticker": "TBIO",
+    "isin": "RU000A102EK1",
+    "instrumentType": "Etf",
+    "balance": 200,
+    "lots": 2,
+    "expectedYield": {
+      "currency": "USD",
+      "value": 1.04
+    },
+    "averagePositionPrice": {
+      "currency": "USD",
+      "value": 0.1051
+    },
+    "name": "Тинькофф NASDAQ Biotech"
+  },
+  {
+    "figi": "TCS00A102EM7",
+    "ticker": "TIPO",
+    "isin": "RU000A102EM7",
+    "instrumentType": "Etf",
+    "balance": 900,
+    "lots": 9,
+    "expectedYield": {
+      "currency": "USD",
+      "value": 8.05
+    },
+    "averagePositionPrice": {
+      "currency": "USD",
+      "value": 0.0998
+    },
+    "name": "Тинькофф Индекс IPO"
+  },
+  {
+    "figi": "BBG0013HGFT4",
+    "ticker": "USD000UTSTOM",
+    "instrumentType": "Currency",
+    "balance": 0.43,
+    "lots": 0,
+    "expectedYield": {
+      "currency": "RUB",
+      "value": 0.24
+    },
+    "averagePositionPrice": {
+      "currency": "RUB",
+      "value": 72.87
+    },
+    "name": "Доллар США"
+  }
+]

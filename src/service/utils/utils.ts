@@ -1,3 +1,5 @@
+export {};
+/*
 import {
   Currency,
   CurrencyPosition,
@@ -5,7 +7,7 @@ import {
   Operation,
   PortfolioPosition,
 } from 'tinkoff-investment-js-client-api';
-import { PortfolioPositionMap, PositionWithPrices } from '../types/model';
+import { PortfolioPositionMap, PositionWithPrices } from '../../types/model';
 
 export function instrumentToEmptyPosition(
   { figi, ticker, isin, type, name }: MarketInstrument,
@@ -29,17 +31,21 @@ export function instrumentToEmptyPosition(
 export function currencyPositionToPortfolioPosition(
   { currency, balance }: CurrencyPosition,
   figi: string | undefined,
+  // undefined for RUB position
   currencyPortfolioPosition: PortfolioPosition | undefined
 ): PortfolioPosition {
-  const { averagePositionPrice, name = currency } =
-    currencyPortfolioPosition || {};
+  const {
+    lots,
+    averagePositionPrice,
+    name = currency,
+  } = currencyPortfolioPosition || {};
   return {
     ...currencyPortfolioPosition,
     instrumentType: 'Currency',
     name,
     figi: figi || currency,
     balance,
-    lots: balance,
+    lots: lots || 0,
     averagePositionPrice: averagePositionPrice || {
       value: balance > 0 ? 1 : 0,
       currency: 'RUB',
@@ -98,71 +104,50 @@ function getInstrumentOperationsCost(operationsForPosition: Operation[]): {
   );
 }
 
-export function convertPositionsWithPrice(
+export function convertPositionWithPrice(
   positions: PortfolioPosition[],
-  operations: Operation[][],
-  lastPrice: number | undefined
-): PositionWithPrices[] {
-  const buyTotalPrice = getBuyInitialTotalPrice(operations, positions[0].figi);
-
-  const updatedPositions = positions.map((position, index) => {
-    const operationsForPosition = operations[index].filter(
-      ({ figi }) => figi === position.figi
-    );
-    const { operationsTotal, buyCost } = getInstrumentOperationsCost(
-      operationsForPosition
-    );
-    const balancePotential = getPositionQuantity(
-      position,
-      operationsForPosition
-    );
-
-    const totalProfit = operationsTotal + (lastPrice || 0) * balancePotential;
-    return {
-      ...position,
-      lastPrice,
-      totalProfit,
-      buyAndTaxesLoss: buyCost,
-      operationsProfit: operationsTotal,
-      balancePotential,
-      currency:
-        position.averagePositionPrice && position.averagePositionPrice.currency,
-    };
-  });
-
-  return updatedPositions.map((position) => {
-    const totalInstrumentNet = updatedPositions.reduce(
-      (sum, { totalProfit }) => totalProfit + sum,
-      0
-    );
-    const profitPercent = Math.abs(100 * (totalInstrumentNet / buyTotalPrice));
-    return {
-      ...position,
-      profitPercent,
-    };
-  });
-}
-
-const CURRENCY_FIGIS: { [currency: string]: string } = {
-  USD: 'BBG0013HGFT4',
-  EUR: 'BBG0013HJJ31',
-};
-
-type CurrencyFigiInfo = {
-  figi: string;
-  currency: Currency;
-};
-
-export function getFigiByCurrencies(
-  currencies: Currency[]
-): CurrencyFigiInfo[] {
-  const uniqueCurrencies = Array.from(new Set(currencies));
-  return uniqueCurrencies
-    .filter((currency) => CURRENCY_FIGIS[currency])
-    .map((currency) => ({
-      currency,
-      figi: CURRENCY_FIGIS[currency],
-    }));
+  operations: Operation[],
+  lastPrice?: number
+): PositionWithPrices {
+  const buyTotalPrice = 1; // getBuyInitialTotalPrice(operations, positions[0].figi);
+  return {} as PositionWithPrices;
+  // const updatedPositions = positions.map((position, index) => {
+  //   const operationsForPosition = operations[index].filter(
+  //     ({ figi }) => figi === position.figi
+  //   );
+  //   const { operationsTotal, buyCost } = getInstrumentOperationsCost(
+  //     operationsForPosition
+  //   );
+  //   const notSoldCurrencyQuantity = getPositionQuantity(
+  //     position,
+  //     operationsForPosition
+  //   );
+  //
+  //   const totalProfit =
+  //     operationsTotal + (lastPrice || 0) * notSoldCurrencyQuantity;
+  //   return {
+  //     ...position,
+  //     lastPrice,
+  //     totalProfit,
+  //     buyAndTaxesLoss: buyCost,
+  //     operationsProfit: operationsTotal,
+  //     notSoldCurrencyQuantity,
+  //     currency:
+  //       position.averagePositionPrice && position.averagePositionPrice.currency,
+  //   };
+  // });
+  //
+  // return updatedPositions.map((position) => {
+  //   const totalInstrumentNet = updatedPositions.reduce(
+  //     (sum, { totalProfit }) => totalProfit + sum,
+  //     0
+  //   );
+  //   const profitPercent = Math.abs(100 * (totalInstrumentNet / buyTotalPrice));
+  //   return {
+  //     ...position,
+  //     profitPercent,
+  //   };
+  // });
 }
 
 export function prepareEmptyPositions(
@@ -238,3 +223,4 @@ function getBuyInitialTotalPrice(
     { priceAcc: { total: 0, quantity: 0 }, count: 0 }
   ).priceAcc.total;
 }
+*/

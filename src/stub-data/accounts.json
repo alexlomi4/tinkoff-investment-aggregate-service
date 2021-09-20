@@ -1,0 +1,10 @@
+[
+  {
+    "brokerAccountType": "TinkoffIis",
+    "brokerAccountId": "1111111111"
+  },
+  {
+    "brokerAccountType": "Tinkoff",
+    "brokerAccountId": "1111111112"
+  }
+]

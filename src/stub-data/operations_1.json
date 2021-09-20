@@ -1,0 +1,5147 @@
+[
+  {
+    "operationType": "Dividend",
+    "date": "2021-09-17T06:00:00+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG004S681B4",
+    "payment": 272.4,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1628336461"
+  },
+  {
+    "operationType": "TaxDividend",
+    "date": "2021-09-17T06:00:00+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG004S681B4",
+    "payment": -35,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1628336686"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-09-03T10:23:35.639+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A102EM7",
+    "quantity": 6,
+    "quantityExecuted": 6,
+    "price": 0.108333,
+    "payment": -0.65,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4345010503",
+        "date": "2021-09-03T10:23:35.639+03:00",
+        "quantity": 6,
+        "price": 0.1088
+      }
+    ],
+    "status": "Done",
+    "id": "25685750672"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-09-03T10:23:21+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 72.87,
+    "payment": -72.87,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -0.04
+    },
+    "trades": [
+      {
+        "tradeId": "376418133",
+        "date": "2021-09-03T10:23:21.848+03:00",
+        "quantity": 1,
+        "price": 72.865
+      }
+    ],
+    "status": "Done",
+    "id": "22198508777"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-09-03T10:23:21+03:00",
+    "isMarginCall": false,
+    "payment": 72.91,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1575686931"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-09-03T10:21:25.277+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A102EM7",
+    "quantity": 64,
+    "quantityExecuted": 64,
+    "price": 0.10875,
+    "payment": -6.96,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4344998164",
+        "date": "2021-09-03T10:21:25.277+03:00",
+        "quantity": 64,
+        "price": 0.1087
+      }
+    ],
+    "status": "Done",
+    "id": "25685660917"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-09-03T10:20:57+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 2,
+    "quantityExecuted": 2,
+    "price": 72.86,
+    "payment": -145.72,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -0.07
+    },
+    "trades": [
+      {
+        "tradeId": "376417247",
+        "date": "2021-09-03T10:20:57.881+03:00",
+        "quantity": 2,
+        "price": 72.86
+      }
+    ],
+    "status": "Done",
+    "id": "22198488792"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-09-03T10:20:39.358+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "BBG000000001",
+    "quantity": 24,
+    "quantityExecuted": 24,
+    "price": 6.224583,
+    "payment": 149.39,
+    "currency": "RUB",
+    "trades": [
+      {
+        "tradeId": "4344993873",
+        "date": "2021-09-03T10:20:39.358+03:00",
+        "quantity": 24,
+        "price": 6.2245
+      }
+    ],
+    "status": "Done",
+    "id": "25685628680"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-09-03T10:18:57.687+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "BBG111111111",
+    "quantity": 24,
+    "quantityExecuted": 24,
+    "price": 0.117917,
+    "payment": 2.83,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4344982364",
+        "date": "2021-09-03T10:18:57.687+03:00",
+        "quantity": 24,
+        "price": 0.118
+      }
+    ],
+    "status": "Done",
+    "id": "25685543168"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-09-03T10:17:05.023+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A102EK1",
+    "quantity": 16,
+    "quantityExecuted": 16,
+    "price": 0.11375,
+    "payment": 1.82,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4344970086",
+        "date": "2021-09-03T10:17:05.023+03:00",
+        "quantity": 16,
+        "price": 0.1135
+      }
+    ],
+    "status": "Done",
+    "id": "25685458581"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-09-03T10:15:35.087+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A102EQ8",
+    "quantity": 6,
+    "quantityExecuted": 6,
+    "price": 0.116667,
+    "payment": -0.7,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4344960228",
+        "date": "2021-09-03T10:15:35.087+03:00",
+        "quantity": 6,
+        "price": 0.1159
+      }
+    ],
+    "status": "Done",
+    "id": "25685380697"
+  },
+  {
+    "operationType": "ServiceCommission",
+    "date": "2021-09-03T10:15:02+03:00",
+    "isMarginCall": false,
+    "payment": -290,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1575631485"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-09-03T10:15:01+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 72.9,
+    "payment": -72.9,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -0.04
+    },
+    "trades": [
+      {
+        "tradeId": "376414884",
+        "date": "2021-09-03T10:15:01.996+03:00",
+        "quantity": 1,
+        "price": 72.9
+      }
+    ],
+    "status": "Done",
+    "id": "22198436796"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-09-03T10:15:01+03:00",
+    "isMarginCall": false,
+    "payment": 362.94,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1575630573"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-31T16:06:51.887+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "BBG111111111",
+    "quantity": 4,
+    "quantityExecuted": 4,
+    "price": 0.12,
+    "payment": -0.48,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4331917380",
+        "date": "2021-08-31T16:06:51.887+03:00",
+        "quantity": 1,
+        "price": 0.1185
+      },
+      {
+        "tradeId": "4331917381",
+        "date": "2021-08-31T16:06:51.887+03:00",
+        "quantity": 2,
+        "price": 0.1188
+      },
+      {
+        "tradeId": "4331917379",
+        "date": "2021-08-31T16:06:51.887+03:00",
+        "quantity": 1,
+        "price": 0.1185
+      }
+    ],
+    "status": "Done",
+    "id": "25624006352"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-31T15:56:12.288+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A1039P6",
+    "quantity": 100,
+    "quantityExecuted": 100,
+    "price": 0.0942,
+    "payment": -9.42,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4331873456",
+        "date": "2021-08-31T15:56:12.288+03:00",
+        "quantity": 100,
+        "price": 0.0942
+      }
+    ],
+    "status": "Done",
+    "id": "25623729398"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-31T15:55:58+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 3,
+    "quantityExecuted": 3,
+    "price": 73.303333,
+    "payment": -219.91,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -0.11
+    },
+    "trades": [
+      {
+        "tradeId": "374786029",
+        "date": "2021-08-31T15:55:58.794+03:00",
+        "quantity": 3,
+        "price": 73.3025
+      }
+    ],
+    "status": "Done",
+    "id": "22186226216"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-08-31T15:55:58+03:00",
+    "isMarginCall": false,
+    "payment": 220.02,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1560504623"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-08-31T15:54:30.638+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A102EM7",
+    "quantity": 65,
+    "quantityExecuted": 65,
+    "price": 0.107231,
+    "payment": 6.97,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4331867853",
+        "date": "2021-08-31T15:54:30.638+03:00",
+        "quantity": 65,
+        "price": 0.1073
+      }
+    ],
+    "status": "Done",
+    "id": "25623691801"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-27T16:29:39.696+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "BBG000000001",
+    "quantity": 24,
+    "quantityExecuted": 24,
+    "price": 6.158333,
+    "payment": -147.8,
+    "currency": "RUB",
+    "trades": [
+      {
+        "tradeId": "4326409509",
+        "date": "2021-08-27T16:29:39.696+03:00",
+        "quantity": 24,
+        "price": 6.1585
+      }
+    ],
+    "status": "Done",
+    "id": "25579057087"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-27T12:03:38.184+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG004S681B4",
+    "quantity": 20,
+    "quantityExecuted": 20,
+    "price": 242.66,
+    "payment": -4853.2,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -2.43
+    },
+    "trades": [
+      {
+        "tradeId": "4324846647",
+        "date": "2021-08-27T12:03:38.184+03:00",
+        "quantity": 20,
+        "price": 242.66
+      }
+    ],
+    "status": "Done",
+    "id": "25571679281"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-08-27T12:03:00+03:00",
+    "isMarginCall": false,
+    "payment": 5000,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1546684830"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-27T10:26:10.688+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A102EQ8",
+    "quantity": 2,
+    "quantityExecuted": 2,
+    "price": 0.115,
+    "payment": -0.23,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4324177498",
+        "date": "2021-08-27T10:26:10.688+03:00",
+        "quantity": 2,
+        "price": 0.1145
+      }
+    ],
+    "status": "Done",
+    "id": "25568198690"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-27T10:25:57.047+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "BBG111111111",
+    "quantity": 28,
+    "quantityExecuted": 28,
+    "price": 0.116429,
+    "payment": -3.26,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4324176075",
+        "date": "2021-08-27T10:25:57.047+03:00",
+        "quantity": 28,
+        "price": 0.1164
+      }
+    ],
+    "status": "Done",
+    "id": "25568188419"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-27T10:24:48.651+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG006G2JVL2",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 159.5,
+    "payment": -159.5,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.08
+    },
+    "trades": [
+      {
+        "tradeId": "5653828490",
+        "date": "2021-08-27T10:24:48.651+03:00",
+        "quantity": 1,
+        "price": 159.5
+      }
+    ],
+    "status": "Done",
+    "id": "293129743690"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-27T10:24:27+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 153,
+    "quantityExecuted": 153,
+    "price": 73.987516,
+    "payment": -11320.09,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -5.66
+    },
+    "trades": [
+      {
+        "tradeId": "373448959",
+        "date": "2021-08-27T10:24:27.714+03:00",
+        "quantity": 153,
+        "price": 73.9875
+      }
+    ],
+    "status": "Done",
+    "id": "22174276717"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-08-27T10:24:27+03:00",
+    "isMarginCall": false,
+    "payment": 11325.76,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1546128373"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-27T10:24:06+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 7,
+    "quantityExecuted": 7,
+    "price": 73.992857,
+    "payment": -517.95,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -0.26
+    },
+    "trades": [
+      {
+        "tradeId": "373448608",
+        "date": "2021-08-27T10:24:06.26+03:00",
+        "quantity": 7,
+        "price": 73.9925
+      }
+    ],
+    "status": "Done",
+    "id": "22174272658"
+  },
+  {
+    "operationType": "Coupon",
+    "date": "2021-08-27T06:00:00+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Bond",
+    "figi": "BBG00NHJGKN2",
+    "payment": 460.68,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1541421646"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-26T12:54:35.175+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG000BPWXK1",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 56.94,
+    "payment": -56.94,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.03
+    },
+    "trades": [
+      {
+        "tradeId": "5640571930",
+        "date": "2021-08-26T12:54:35.175+03:00",
+        "quantity": 1,
+        "price": 56.94
+      }
+    ],
+    "status": "Done",
+    "id": "292545156460"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-26T12:53:42+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 60,
+    "quantityExecuted": 60,
+    "price": 74.0125,
+    "payment": -4440.75,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -2.22
+    },
+    "trades": [
+      {
+        "tradeId": "373048555",
+        "date": "2021-08-26T12:53:42.572+03:00",
+        "quantity": 60,
+        "price": 74.0125
+      }
+    ],
+    "status": "Done",
+    "id": "22170344010"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-08-26T12:53:41+03:00",
+    "isMarginCall": false,
+    "payment": 4442.98,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1542295271"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-24T10:37:26.175+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "BBG111111111",
+    "quantity": 2,
+    "quantityExecuted": 2,
+    "price": 0.115,
+    "payment": -0.23,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4312387045",
+        "date": "2021-08-24T10:37:26.175+03:00",
+        "quantity": 2,
+        "price": 0.1163
+      }
+    ],
+    "status": "Done",
+    "id": "25502429975"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-24T10:36:48.486+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A1039P6",
+    "quantity": 100,
+    "quantityExecuted": 100,
+    "price": 0.092,
+    "payment": -9.2,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4312382973",
+        "date": "2021-08-24T10:36:48.486+03:00",
+        "quantity": 100,
+        "price": 0.092
+      }
+    ],
+    "status": "Done",
+    "id": "25502404475"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-24T10:36:33+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 8,
+    "quantityExecuted": 8,
+    "price": 73.92,
+    "payment": -591.36,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -0.3
+    },
+    "trades": [
+      {
+        "tradeId": "371842662",
+        "date": "2021-08-24T10:36:33.175+03:00",
+        "quantity": 8,
+        "price": 73.92
+      }
+    ],
+    "status": "Done",
+    "id": "22159671047"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-08-24T10:36:32+03:00",
+    "isMarginCall": false,
+    "payment": 591.66,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1531973345"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-23T20:33:44.563+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG0016XJ8S0",
+    "quantity": 4,
+    "quantityExecuted": 4,
+    "price": 4.63,
+    "payment": -18.52,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.01
+    },
+    "trades": [
+      {
+        "tradeId": "5602016130",
+        "date": "2021-08-23T20:33:44.763+03:00",
+        "quantity": 4,
+        "price": 4.63
+      }
+    ],
+    "status": "Done",
+    "id": "291182141580"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-23T20:32:51+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 10,
+    "quantityExecuted": 10,
+    "price": 74.138,
+    "payment": -741.38,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -0.37
+    },
+    "trades": [
+      {
+        "tradeId": "371641306",
+        "date": "2021-08-23T20:32:51.471+03:00",
+        "quantity": 10,
+        "price": 74.1375
+      }
+    ],
+    "status": "Done",
+    "id": "22158273578"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-08-23T20:32:51+03:00",
+    "isMarginCall": false,
+    "payment": 741.76,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1530367295"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-23T20:32:49+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 10,
+    "quantityExecuted": 10,
+    "price": 74.138,
+    "payment": -741.38,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -0.37
+    },
+    "trades": [
+      {
+        "tradeId": "371641303",
+        "date": "2021-08-23T20:32:49.862+03:00",
+        "quantity": 10,
+        "price": 74.1375
+      }
+    ],
+    "status": "Done",
+    "id": "22158273500"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-08-23T20:32:49+03:00",
+    "isMarginCall": false,
+    "payment": 741.76,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1530366910"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-19T17:05:30.77+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A102EM7",
+    "quantity": 18,
+    "quantityExecuted": 18,
+    "price": 0.102778,
+    "payment": -1.85,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4299387709",
+        "date": "2021-08-19T17:05:30.77+03:00",
+        "quantity": 18,
+        "price": 0.1025
+      }
+    ],
+    "status": "Done",
+    "id": "25439635957"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-19T17:02:19.268+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG000CHWP52",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 28.14,
+    "payment": -28.14,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.01
+    },
+    "trades": [
+      {
+        "tradeId": "5568732810",
+        "date": "2021-08-19T17:02:19.268+03:00",
+        "quantity": 1,
+        "price": 28.14
+      }
+    ],
+    "status": "Done",
+    "id": "289526931560"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-19T17:01:36+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 30,
+    "quantityExecuted": 30,
+    "price": 74.215,
+    "payment": -2226.45,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -1.11
+    },
+    "trades": [
+      {
+        "tradeId": "370382892",
+        "date": "2021-08-19T17:01:36.917+03:00",
+        "quantity": 30,
+        "price": 74.215
+      }
+    ],
+    "status": "Done",
+    "id": "22146936191"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-08-19T17:01:36+03:00",
+    "isMarginCall": false,
+    "payment": 2227.57,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1517087549"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-19T11:24:50.892+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A102EQ8",
+    "quantity": 8,
+    "quantityExecuted": 8,
+    "price": 0.11125,
+    "payment": -0.89,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4297832983",
+        "date": "2021-08-19T11:24:50.892+03:00",
+        "quantity": 8,
+        "price": 0.1114
+      }
+    ],
+    "status": "Done",
+    "id": "25424508707"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-19T11:24:23.352+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG006G2JVL2",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 165.12,
+    "payment": -165.12,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.08
+    },
+    "trades": [
+      {
+        "tradeId": "5564013840",
+        "date": "2021-08-19T11:24:23.352+03:00",
+        "quantity": 1,
+        "price": 165.12
+      }
+    ],
+    "status": "Done",
+    "id": "289257791590"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-19T11:22:53+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 166,
+    "quantityExecuted": 166,
+    "price": 74.17753,
+    "payment": -12313.47,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -6.16
+    },
+    "trades": [
+      {
+        "tradeId": "370210538",
+        "date": "2021-08-19T11:22:53.529+03:00",
+        "quantity": 166,
+        "price": 74.1775
+      }
+    ],
+    "status": "Done",
+    "id": "22144328505"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-08-19T11:22:53+03:00",
+    "isMarginCall": false,
+    "payment": 12319.63,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1515012905"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-19T11:20:39.493+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A102EM7",
+    "quantity": 97,
+    "quantityExecuted": 97,
+    "price": 0.102371,
+    "payment": -9.93,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4297791812",
+        "date": "2021-08-19T11:20:39.493+03:00",
+        "quantity": 97,
+        "price": 0.1024
+      }
+    ],
+    "status": "Done",
+    "id": "25424287990"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-19T11:20:10+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 10,
+    "quantityExecuted": 10,
+    "price": 74.19,
+    "payment": -741.9,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -0.37
+    },
+    "trades": [
+      {
+        "tradeId": "370209387",
+        "date": "2021-08-19T11:20:10.007+03:00",
+        "quantity": 10,
+        "price": 74.19
+      }
+    ],
+    "status": "Done",
+    "id": "22144305142"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-08-19T11:20:09+03:00",
+    "isMarginCall": false,
+    "payment": 742.28,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1514986259"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-18T16:34:44.661+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG002NLDLV8",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 13.99,
+    "payment": -13.99,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.01
+    },
+    "trades": [
+      {
+        "tradeId": "5552214070",
+        "date": "2021-08-18T16:34:44.86+03:00",
+        "quantity": 1,
+        "price": 13.99
+      }
+    ],
+    "status": "Done",
+    "id": "288703901850"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-18T16:34:07+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 14,
+    "quantityExecuted": 14,
+    "price": 73.667857,
+    "payment": -1031.35,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -0.52
+    },
+    "trades": [
+      {
+        "tradeId": "369818508",
+        "date": "2021-08-18T16:34:07.071+03:00",
+        "quantity": 14,
+        "price": 73.6675
+      }
+    ],
+    "status": "Done",
+    "id": "22140804107"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-08-18T16:34:05+03:00",
+    "isMarginCall": false,
+    "payment": 1031.87,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1512029830"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-18T13:30:52.967+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A102EM7",
+    "quantity": 2,
+    "quantityExecuted": 2,
+    "price": 0.105,
+    "payment": -0.21,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4292214551",
+        "date": "2021-08-18T13:30:52.967+03:00",
+        "quantity": 2,
+        "price": 0.1036
+      }
+    ],
+    "status": "Done",
+    "id": "25400861892"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-18T11:01:13.202+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A102EM7",
+    "quantity": 34,
+    "quantityExecuted": 34,
+    "price": 0.103529,
+    "payment": -3.52,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4291554112",
+        "date": "2021-08-18T11:01:13.202+03:00",
+        "quantity": 34,
+        "price": 0.1034
+      }
+    ],
+    "status": "Done",
+    "id": "25395325959"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-17T11:23:30.578+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG006G2JVL2",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 176.91,
+    "payment": -176.91,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.09
+    },
+    "trades": [
+      {
+        "tradeId": "5534692660",
+        "date": "2021-08-17T11:23:30.578+03:00",
+        "quantity": 1,
+        "price": 176.91
+      }
+    ],
+    "status": "Done",
+    "id": "287856396590"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-17T11:23:04+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 175,
+    "quantityExecuted": 175,
+    "price": 73.497486,
+    "payment": -12862.06,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -6.43
+    },
+    "trades": [
+      {
+        "tradeId": "369121910",
+        "date": "2021-08-17T11:23:04.919+03:00",
+        "quantity": 175,
+        "price": 73.4975
+      }
+    ],
+    "status": "Done",
+    "id": "22134167091"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-08-17T11:23:04+03:00",
+    "isMarginCall": false,
+    "payment": 12868.94,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1505753099"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-17T11:21:43.185+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG000QXWHD1",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 141.5,
+    "payment": -141.5,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.07
+    },
+    "trades": [
+      {
+        "tradeId": "5534675170",
+        "date": "2021-08-17T11:21:43.185+03:00",
+        "quantity": 1,
+        "price": 141.5
+      }
+    ],
+    "status": "Done",
+    "id": "287855431830"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-17T11:20:56+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 120,
+    "quantityExecuted": 120,
+    "price": 73.5075,
+    "payment": -8820.9,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -4.41
+    },
+    "trades": [
+      {
+        "tradeId": "369121359",
+        "date": "2021-08-17T11:20:56.997+03:00",
+        "quantity": 120,
+        "price": 73.5075
+      }
+    ],
+    "status": "Done",
+    "id": "22134149863"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-08-17T11:20:15+03:00",
+    "isMarginCall": false,
+    "payment": 8824.72,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1505736461"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-08-16T17:45:05.846+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00HTN2CQ3",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 26.39,
+    "payment": 26.39,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.01
+    },
+    "trades": [
+      {
+        "tradeId": "5526397080",
+        "date": "2021-08-16T17:45:05.959+03:00",
+        "quantity": 1,
+        "price": 26.39
+      }
+    ],
+    "status": "Done",
+    "id": "287529004950"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-10T18:29:26.899+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00ZGF7771",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 271,
+    "payment": -271,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.14
+    },
+    "trades": [
+      {
+        "tradeId": "5460133980",
+        "date": "2021-08-10T18:29:26.899+03:00",
+        "quantity": 1,
+        "price": 271
+      }
+    ],
+    "status": "Done",
+    "id": "285327498540"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-10T18:29:05+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 272,
+    "quantityExecuted": 272,
+    "price": 73.965,
+    "payment": -20118.48,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -10.06
+    },
+    "trades": [
+      {
+        "tradeId": "366627093",
+        "date": "2021-08-10T18:29:05.478+03:00",
+        "quantity": 272,
+        "price": 73.965
+      }
+    ],
+    "status": "Done",
+    "id": "22113656842"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-08-10T18:29:05+03:00",
+    "isMarginCall": false,
+    "payment": 20128.54,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1480658214"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-05T10:58:19.314+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "BBG111111111",
+    "quantity": 14,
+    "quantityExecuted": 14,
+    "price": 0.115714,
+    "payment": -1.62,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4237398027",
+        "date": "2021-08-05T10:58:19.314+03:00",
+        "quantity": 14,
+        "price": 0.1159
+      }
+    ],
+    "status": "Done",
+    "id": "25188804877"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-03T16:31:00.238+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG000BX72V8",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 95.41,
+    "payment": -95.41,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.05
+    },
+    "trades": [
+      {
+        "tradeId": "5367339410",
+        "date": "2021-08-03T16:31:00.238+03:00",
+        "quantity": 1,
+        "price": 95.41
+      }
+    ],
+    "status": "Done",
+    "id": "282034703210"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-08-03T16:22:37.209+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG000BX72V8",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 96.45,
+    "payment": 96.45,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.05
+    },
+    "trades": [
+      {
+        "tradeId": "5367050700",
+        "date": "2021-08-03T16:22:37.209+03:00",
+        "quantity": 1,
+        "price": 96.45
+      }
+    ],
+    "status": "Done",
+    "id": "282029850630"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-03T11:01:38.656+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG002NLDLV8",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 16.83,
+    "payment": -16.83,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.01
+    },
+    "trades": [
+      {
+        "tradeId": "5363672260",
+        "date": "2021-08-03T11:01:38.656+03:00",
+        "quantity": 1,
+        "price": 16.83
+      }
+    ],
+    "status": "Done",
+    "id": "281913813840"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-03T11:00:48+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 72.88,
+    "payment": -72.88,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -0.04
+    },
+    "trades": [
+      {
+        "tradeId": "363571726",
+        "date": "2021-08-03T11:00:48.55+03:00",
+        "quantity": 1,
+        "price": 72.8825
+      }
+    ],
+    "status": "Done",
+    "id": "22086158635"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-08-03T11:00:48+03:00",
+    "isMarginCall": false,
+    "payment": 72.93,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1448002173"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-03T11:00:13.543+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG002NLDLV8",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 16.84,
+    "payment": -16.84,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.01
+    },
+    "trades": [
+      {
+        "tradeId": "5363651810",
+        "date": "2021-08-03T11:00:13.543+03:00",
+        "quantity": 1,
+        "price": 16.84
+      }
+    ],
+    "status": "Done",
+    "id": "281912901990"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-03T10:57:54.272+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG000BX72V8",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 94.57,
+    "payment": -94.57,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.05
+    },
+    "trades": [
+      {
+        "tradeId": "5363616790",
+        "date": "2021-08-03T10:57:54.272+03:00",
+        "quantity": 1,
+        "price": 94.57
+      }
+    ],
+    "status": "Done",
+    "id": "281911601230"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-03T10:57:23.405+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG000BX72V8",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 94.6,
+    "payment": -94.6,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.05
+    },
+    "trades": [
+      {
+        "tradeId": "5363612920",
+        "date": "2021-08-03T10:57:23.405+03:00",
+        "quantity": 1,
+        "price": 94.6
+      }
+    ],
+    "status": "Done",
+    "id": "281911350950"
+  },
+  {
+    "operationType": "ServiceCommission",
+    "date": "2021-08-03T10:57:23+03:00",
+    "isMarginCall": false,
+    "payment": -3.97,
+    "currency": "USD",
+    "status": "Done",
+    "id": "1447969051"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-08-02T16:38:53.56+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG0016XJ8S0",
+    "quantity": 5,
+    "quantityExecuted": 5,
+    "price": 5.83,
+    "payment": -29.15,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.01
+    },
+    "trades": [
+      {
+        "tradeId": "5352458440",
+        "date": "2021-08-02T16:38:53.716+03:00",
+        "quantity": 5,
+        "price": 5.83
+      }
+    ],
+    "status": "Done",
+    "id": "281409230770"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-07-30T17:49:14.654+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG0016XJ8S0",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 6.24,
+    "payment": 6.24,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.01
+    },
+    "trades": [
+      {
+        "tradeId": "5340609320",
+        "date": "2021-07-30T17:49:14.654+03:00",
+        "quantity": 1,
+        "price": 6.24
+      }
+    ],
+    "status": "Done",
+    "id": "280954595240"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-07-30T16:34:19.607+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG0016XJ8S0",
+    "quantity": 10,
+    "quantityExecuted": 10,
+    "price": 6.1,
+    "payment": 61,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.03
+    },
+    "trades": [
+      {
+        "tradeId": "5337982160",
+        "date": "2021-07-30T16:34:31.492+03:00",
+        "quantity": 10,
+        "price": 6.1
+      }
+    ],
+    "status": "Done",
+    "id": "280816165270"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-07-30T16:34:19.604+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG0016XJ8S0",
+    "quantity": 10,
+    "quantityExecuted": 10,
+    "price": 6.1,
+    "payment": 61,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.03
+    },
+    "trades": [
+      {
+        "tradeId": "5337982120",
+        "date": "2021-07-30T16:34:31.492+03:00",
+        "quantity": 4,
+        "price": 6.1
+      },
+      {
+        "tradeId": "5337981770",
+        "date": "2021-07-30T16:34:31.492+03:00",
+        "quantity": 6,
+        "price": 6.1
+      }
+    ],
+    "status": "Done",
+    "id": "280816165130"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-07-30T16:34:19.597+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG0016XJ8S0",
+    "quantity": 10,
+    "quantityExecuted": 10,
+    "price": 6.1,
+    "payment": 61,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.03
+    },
+    "trades": [
+      {
+        "tradeId": "5337981790",
+        "date": "2021-07-30T16:34:31.492+03:00",
+        "quantity": 10,
+        "price": 6.1
+      }
+    ],
+    "status": "Done",
+    "id": "280816164830"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-30T07:30:02.172+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG0016XJ8S0",
+    "quantity": 10,
+    "quantityExecuted": 10,
+    "price": 5.66,
+    "payment": -56.6,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.04
+    },
+    "trades": [
+      {
+        "tradeId": "5331899200",
+        "date": "2021-07-30T07:30:02.172+03:00",
+        "quantity": 2,
+        "price": 5.66
+      },
+      {
+        "tradeId": "5331899220",
+        "date": "2021-07-30T07:30:02.172+03:00",
+        "quantity": 3,
+        "price": 5.66
+      },
+      {
+        "tradeId": "5331899230",
+        "date": "2021-07-30T07:30:02.172+03:00",
+        "quantity": 3,
+        "price": 5.66
+      },
+      {
+        "tradeId": "5331899210",
+        "date": "2021-07-30T07:30:02.172+03:00",
+        "quantity": 2,
+        "price": 5.66
+      }
+    ],
+    "status": "Done",
+    "id": "280626700910"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-29T23:41:35.294+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG0016XJ8S0",
+    "quantity": 10,
+    "quantityExecuted": 10,
+    "price": 5.92,
+    "payment": -59.2,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.07
+    },
+    "trades": [
+      {
+        "tradeId": "5331070620",
+        "date": "2021-07-29T23:41:35.294+03:00",
+        "quantity": 1,
+        "price": 5.92
+      },
+      {
+        "tradeId": "5331070640",
+        "date": "2021-07-29T23:41:35.294+03:00",
+        "quantity": 2,
+        "price": 5.92
+      },
+      {
+        "tradeId": "5331070590",
+        "date": "2021-07-29T23:41:35.294+03:00",
+        "quantity": 1,
+        "price": 5.92
+      },
+      {
+        "tradeId": "5331070610",
+        "date": "2021-07-29T23:41:35.294+03:00",
+        "quantity": 1,
+        "price": 5.92
+      },
+      {
+        "tradeId": "5331070600",
+        "date": "2021-07-29T23:41:35.294+03:00",
+        "quantity": 1,
+        "price": 5.92
+      },
+      {
+        "tradeId": "5331070650",
+        "date": "2021-07-29T23:41:35.294+03:00",
+        "quantity": 2,
+        "price": 5.92
+      },
+      {
+        "tradeId": "5331070630",
+        "date": "2021-07-29T23:41:35.294+03:00",
+        "quantity": 2,
+        "price": 5.92
+      }
+    ],
+    "status": "Done",
+    "id": "280619241140"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-29T21:07:58.379+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG0016XJ8S0",
+    "quantity": 5,
+    "quantityExecuted": 5,
+    "price": 6.01,
+    "payment": -30.05,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.02
+    },
+    "trades": [
+      {
+        "tradeId": "5328788740",
+        "date": "2021-07-29T21:07:58.58+03:00",
+        "quantity": 5,
+        "price": 6.01
+      }
+    ],
+    "status": "Done",
+    "id": "280531310830"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-07-27T07:02:35.929+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG0016XJ8S0",
+    "quantity": 4,
+    "quantityExecuted": 4,
+    "price": 5,
+    "payment": 20,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.01
+    },
+    "trades": [
+      {
+        "tradeId": "5276690620",
+        "date": "2021-07-27T07:02:39.486+03:00",
+        "quantity": 4,
+        "price": 5
+      }
+    ],
+    "status": "Done",
+    "id": "278645037160"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-27T00:21:48.575+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG0016XJ8S0",
+    "quantity": 10,
+    "quantityExecuted": 10,
+    "price": 4.52,
+    "payment": -45.2,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.02
+    },
+    "trades": [
+      {
+        "tradeId": "5276421380",
+        "date": "2021-07-27T00:21:48.575+03:00",
+        "quantity": 5,
+        "price": 4.52
+      },
+      {
+        "tradeId": "5276421370",
+        "date": "2021-07-27T00:21:48.575+03:00",
+        "quantity": 5,
+        "price": 4.52
+      }
+    ],
+    "status": "Done",
+    "id": "278637428680"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-07-26T14:35:23.314+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00ZGF7771",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 238.04,
+    "payment": 238.04,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.12
+    },
+    "trades": [
+      {
+        "tradeId": "5265319910",
+        "date": "2021-07-26T14:35:23.314+03:00",
+        "quantity": 1,
+        "price": 238.04
+      }
+    ],
+    "status": "Done",
+    "id": "278174386260"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-23T10:38:48.57+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "BBG111111111",
+    "quantity": 3,
+    "quantityExecuted": 3,
+    "price": 0.113333,
+    "payment": -0.34,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4187621341",
+        "date": "2021-07-23T10:38:48.57+03:00",
+        "quantity": 3,
+        "price": 0.1117
+      }
+    ],
+    "status": "Done",
+    "id": "24979017928"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-23T10:38:32.922+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "BBG111111111",
+    "quantity": 51,
+    "quantityExecuted": 51,
+    "price": 0.111765,
+    "payment": -5.7,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4187620194",
+        "date": "2021-07-23T10:38:32.922+03:00",
+        "quantity": 51,
+        "price": 0.1117
+      }
+    ],
+    "status": "Done",
+    "id": "24979010961"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-23T10:24:41+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 6,
+    "quantityExecuted": 6,
+    "price": 73.755,
+    "payment": -442.53,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -0.22
+    },
+    "trades": [
+      {
+        "tradeId": "359352677",
+        "date": "2021-07-23T10:24:41.368+03:00",
+        "quantity": 6,
+        "price": 73.755
+      }
+    ],
+    "status": "Done",
+    "id": "22045887966"
+  },
+  {
+    "operationType": "Dividend",
+    "date": "2021-07-23T06:00:00+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG004S681W1",
+    "payment": 530.2,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1403133880"
+  },
+  {
+    "operationType": "TaxDividend",
+    "date": "2021-07-23T06:00:00+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG004S681W1",
+    "payment": -65,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1403133870"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-19T10:06:29.282+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A102EK1",
+    "quantity": 11,
+    "quantityExecuted": 11,
+    "price": 0.103636,
+    "payment": -1.14,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4163494686",
+        "date": "2021-07-19T10:06:29.282+03:00",
+        "quantity": 11,
+        "price": 0.1033
+      }
+    ],
+    "status": "Done",
+    "id": "24877430021"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-19T10:05:59.616+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A1039P6",
+    "quantity": 300,
+    "quantityExecuted": 300,
+    "price": 0.0903,
+    "payment": -27.09,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4163491094",
+        "date": "2021-07-19T10:05:59.616+03:00",
+        "quantity": 300,
+        "price": 0.0903
+      }
+    ],
+    "status": "Done",
+    "id": "24877403652"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-19T10:00:41.301+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00ZGF7771",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 226.01,
+    "payment": -226.01,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.11
+    },
+    "trades": [
+      {
+        "tradeId": "5170767590",
+        "date": "2021-07-19T10:00:41.301+03:00",
+        "quantity": 1,
+        "price": 226.01
+      }
+    ],
+    "status": "Done",
+    "id": "274522230920"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-19T08:56:35.146+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00HTN2CQ3",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 27.5,
+    "payment": -27.5,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.01
+    },
+    "trades": [
+      {
+        "tradeId": "5169865070",
+        "date": "2021-07-19T08:56:35.146+03:00",
+        "quantity": 1,
+        "price": 27.5
+      }
+    ],
+    "status": "Done",
+    "id": "274517613690"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-07-16T12:30:10.046+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG003PHHZT1",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 282,
+    "payment": 282,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.14
+    },
+    "trades": [
+      {
+        "tradeId": "5157444090",
+        "date": "2021-07-16T12:30:10.046+03:00",
+        "quantity": 1,
+        "price": 282
+      }
+    ],
+    "status": "Done",
+    "id": "273998409250"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-14T11:32:49.166+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "BBG111111111",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 0.11,
+    "payment": -0.11,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4145899022",
+        "date": "2021-07-14T11:32:49.166+03:00",
+        "quantity": 1,
+        "price": 0.1106
+      }
+    ],
+    "status": "Done",
+    "id": "24814479183"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-14T11:04:10.841+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "BBG111111111",
+    "quantity": 21,
+    "quantityExecuted": 21,
+    "price": 0.110952,
+    "payment": -2.33,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4145780923",
+        "date": "2021-07-14T11:04:10.841+03:00",
+        "quantity": 21,
+        "price": 0.1108
+      }
+    ],
+    "status": "Done",
+    "id": "24813489259"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-13T23:39:02.307+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00HTN2CQ3",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 37.5,
+    "payment": -37.5,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.02
+    },
+    "trades": [
+      {
+        "tradeId": "5122627160",
+        "date": "2021-07-13T23:39:02.307+03:00",
+        "quantity": 1,
+        "price": 37.5
+      }
+    ],
+    "status": "Done",
+    "id": "272616403710"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-07-13T17:26:37.858+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00HTN2CQ3",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 40,
+    "payment": 40,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.02
+    },
+    "trades": [
+      {
+        "tradeId": "5116086260",
+        "date": "2021-07-13T17:29:05.736+03:00",
+        "quantity": 1,
+        "price": 40
+      }
+    ],
+    "status": "Done",
+    "id": "272303414380"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-13T16:03:38.143+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A102EQ8",
+    "quantity": 7,
+    "quantityExecuted": 7,
+    "price": 0.111429,
+    "payment": -0.78,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4144766040",
+        "date": "2021-07-13T16:03:38.143+03:00",
+        "quantity": 7,
+        "price": 0.111
+      }
+    ],
+    "status": "Done",
+    "id": "24801117048"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-13T10:56:53.036+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00HTN2CQ3",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 37.27,
+    "payment": -37.27,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.02
+    },
+    "trades": [
+      {
+        "tradeId": "5107536550",
+        "date": "2021-07-13T10:56:53.036+03:00",
+        "quantity": 1,
+        "price": 37.27
+      }
+    ],
+    "status": "Done",
+    "id": "272059339830"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-13T10:56:35+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 38,
+    "quantityExecuted": 38,
+    "price": 74.04,
+    "payment": -2813.52,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -1.41
+    },
+    "trades": [
+      {
+        "tradeId": "354993836",
+        "date": "2021-07-13T10:56:35.563+03:00",
+        "quantity": 38,
+        "price": 74.04
+      }
+    ],
+    "status": "Done",
+    "id": "21998120254"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-07-13T10:56:35+03:00",
+    "isMarginCall": false,
+    "payment": 2814.93,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1363556813"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-12T17:31:49.318+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A102EK1",
+    "quantity": 105,
+    "quantityExecuted": 105,
+    "price": 0.105429,
+    "payment": -11.07,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4139189474",
+        "date": "2021-07-12T17:31:49.318+03:00",
+        "quantity": 105,
+        "price": 0.1054
+      }
+    ],
+    "status": "Done",
+    "id": "24784992713"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-12T15:49:29.508+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00HTN2CQ3",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 50.39,
+    "payment": -50.39,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.03
+    },
+    "trades": [
+      {
+        "tradeId": "5093787880",
+        "date": "2021-07-12T15:49:29.508+03:00",
+        "quantity": 1,
+        "price": 50.39
+      }
+    ],
+    "status": "Done",
+    "id": "271616040430"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-12T15:49:12+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 10,
+    "quantityExecuted": 10,
+    "price": 74.558,
+    "payment": -745.58,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -0.37
+    },
+    "trades": [
+      {
+        "tradeId": "354703596",
+        "date": "2021-07-12T15:49:12.576+03:00",
+        "quantity": 10,
+        "price": 74.5575
+      }
+    ],
+    "status": "Done",
+    "id": "21994980629"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-07-12T15:49:12+03:00",
+    "isMarginCall": false,
+    "payment": 745.96,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1359633845"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-12T15:49:10+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 10,
+    "quantityExecuted": 10,
+    "price": 74.558,
+    "payment": -745.58,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -0.37
+    },
+    "trades": [
+      {
+        "tradeId": "354703592",
+        "date": "2021-07-12T15:49:10.915+03:00",
+        "quantity": 10,
+        "price": 74.5575
+      }
+    ],
+    "status": "Done",
+    "id": "21994980531"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-07-12T15:49:10+03:00",
+    "isMarginCall": false,
+    "payment": 745.96,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1359633817"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-12T07:34:12.366+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00HTN2CQ3",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 53.4,
+    "payment": -53.4,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.03
+    },
+    "trades": [
+      {
+        "tradeId": "5085441810",
+        "date": "2021-07-12T07:34:12.366+03:00",
+        "quantity": 1,
+        "price": 53.4
+      }
+    ],
+    "status": "Done",
+    "id": "271453043810"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-07-12T07:17:56.848+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00HTN2CQ3",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 58.5,
+    "payment": 58.5,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.03
+    },
+    "trades": [
+      {
+        "tradeId": "5084352400",
+        "date": "2021-07-12T07:17:56.848+03:00",
+        "quantity": 1,
+        "price": 58.5
+      }
+    ],
+    "status": "Done",
+    "id": "271451763700"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-12T07:16:59.234+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00HTN2CQ3",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 63.8,
+    "payment": -63.8,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.03
+    },
+    "trades": [
+      {
+        "tradeId": "5084291780",
+        "date": "2021-07-12T07:16:59.234+03:00",
+        "quantity": 1,
+        "price": 63.8
+      }
+    ],
+    "status": "Done",
+    "id": "271451651400"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-09T13:48:15.661+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG003PHHZT1",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 232.97,
+    "payment": -232.97,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.12
+    },
+    "trades": [
+      {
+        "tradeId": "5073318550",
+        "date": "2021-07-09T13:48:15.661+03:00",
+        "quantity": 1,
+        "price": 232.97
+      }
+    ],
+    "status": "Done",
+    "id": "271045198840"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-07-09T13:47:11.707+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG003PHHZT1",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 232.8,
+    "payment": 232.8,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.12
+    },
+    "trades": [
+      {
+        "tradeId": "5073313040",
+        "date": "2021-07-09T13:47:11.707+03:00",
+        "quantity": 1,
+        "price": 232.8
+      }
+    ],
+    "status": "Done",
+    "id": "271044865830"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-09T13:38:41.88+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A102EK1",
+    "quantity": 100,
+    "quantityExecuted": 100,
+    "price": 0.1049,
+    "payment": -10.49,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4132292455",
+        "date": "2021-07-09T13:38:41.88+03:00",
+        "quantity": 100,
+        "price": 0.1049
+      }
+    ],
+    "status": "Done",
+    "id": "24760146359"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-07-09T10:28:11.997+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00HTN2CQ3",
+    "quantity": 2,
+    "quantityExecuted": 2,
+    "price": 52.39,
+    "payment": 104.78,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.05
+    },
+    "trades": [
+      {
+        "tradeId": "5071003760",
+        "date": "2021-07-09T10:28:11.997+03:00",
+        "quantity": 2,
+        "price": 52.39
+      }
+    ],
+    "status": "Done",
+    "id": "270942184250"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-09T08:54:39.303+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00HTN2CQ3",
+    "quantity": 2,
+    "quantityExecuted": 2,
+    "price": 53.12,
+    "payment": -106.24,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.06
+    },
+    "trades": [
+      {
+        "tradeId": "5068543690",
+        "date": "2021-07-09T08:54:39.303+03:00",
+        "quantity": 1,
+        "price": 53.12
+      },
+      {
+        "tradeId": "5068543680",
+        "date": "2021-07-09T08:54:39.303+03:00",
+        "quantity": 1,
+        "price": 53.12
+      }
+    ],
+    "status": "Done",
+    "id": "270908275150"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-07-08T21:38:22.643+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00HTN2CQ3",
+    "quantity": 2,
+    "quantityExecuted": 2,
+    "price": 51.8,
+    "payment": 103.6,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.06
+    },
+    "trades": [
+      {
+        "tradeId": "5065002410",
+        "date": "2021-07-08T21:38:22.643+03:00",
+        "quantity": 1,
+        "price": 51.8
+      },
+      {
+        "tradeId": "5065002420",
+        "date": "2021-07-08T21:38:22.643+03:00",
+        "quantity": 1,
+        "price": 51.8
+      }
+    ],
+    "status": "Done",
+    "id": "270828884510"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-08T08:53:01.148+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG003PHHZT1",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 219.59,
+    "payment": -219.59,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.11
+    },
+    "trades": [
+      {
+        "tradeId": "5048688310",
+        "date": "2021-07-08T08:53:01.148+03:00",
+        "quantity": 1,
+        "price": 219.59
+      }
+    ],
+    "status": "Done",
+    "id": "270140473380"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-07-08T07:21:41.698+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG003PHHZT1",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 218.98,
+    "payment": 218.98,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.11
+    },
+    "trades": [
+      {
+        "tradeId": "5048468460",
+        "date": "2021-07-08T07:21:41.698+03:00",
+        "quantity": 1,
+        "price": 218.98
+      }
+    ],
+    "status": "Done",
+    "id": "270139208690"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-07T20:41:41.412+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG003PHHZT1",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 222.07,
+    "payment": -222.07,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.11
+    },
+    "trades": [
+      {
+        "tradeId": "5046144640",
+        "date": "2021-07-07T20:41:41.412+03:00",
+        "quantity": 1,
+        "price": 222.07
+      }
+    ],
+    "status": "Done",
+    "id": "270027121850"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-07T14:26:48+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 74.34,
+    "payment": -74.34,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -0.04
+    },
+    "trades": [
+      {
+        "tradeId": "352995501",
+        "date": "2021-07-07T14:26:48.618+03:00",
+        "quantity": 1,
+        "price": 74.34
+      }
+    ],
+    "status": "Done",
+    "id": "21973557468"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-07-07T14:26:38+03:00",
+    "isMarginCall": false,
+    "payment": 100,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1340872565"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-07-07T10:59:07.021+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG003PHHZT1",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 231.44,
+    "payment": 231.44,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.12
+    },
+    "trades": [
+      {
+        "tradeId": "5034621340",
+        "date": "2021-07-07T10:59:07.021+03:00",
+        "quantity": 1,
+        "price": 231.44
+      }
+    ],
+    "status": "Done",
+    "id": "269589572930"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-05T15:30:49.499+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A102EM7",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 0.1,
+    "payment": -0.1,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4108745987",
+        "date": "2021-07-05T15:30:49.499+03:00",
+        "quantity": 1,
+        "price": 0.1022
+      }
+    ],
+    "status": "Done",
+    "id": "24676815020"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-05T15:30:28.034+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A102EQ8",
+    "quantity": 154,
+    "quantityExecuted": 154,
+    "price": 0.110714,
+    "payment": -17.05,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4108745178",
+        "date": "2021-07-05T15:30:28.034+03:00",
+        "quantity": 154,
+        "price": 0.1107
+      }
+    ],
+    "status": "Done",
+    "id": "24676810824"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-03T01:03:04.1+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00HTN2CQ3",
+    "quantity": 2,
+    "quantityExecuted": 2,
+    "price": 45.3,
+    "payment": -90.6,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.05
+    },
+    "trades": [
+      {
+        "tradeId": "5014216630",
+        "date": "2021-07-03T01:03:04.1+03:00",
+        "quantity": 2,
+        "price": 45.3
+      }
+    ],
+    "status": "Done",
+    "id": "268937712480"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-07-03T01:02:20.62+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00HTN2CQ3",
+    "quantity": 2,
+    "quantityExecuted": 2,
+    "price": 45.26,
+    "payment": 90.52,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.05
+    },
+    "trades": [
+      {
+        "tradeId": "5014215020",
+        "date": "2021-07-03T01:02:20.62+03:00",
+        "quantity": 2,
+        "price": 45.26
+      }
+    ],
+    "status": "Done",
+    "id": "268937694520"
+  },
+  {
+    "operationType": "ServiceCommission",
+    "date": "2021-07-03T01:02:20+03:00",
+    "isMarginCall": false,
+    "payment": -3.94,
+    "currency": "USD",
+    "status": "Done",
+    "id": "1328434294"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-03T00:26:09.233+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00HTN2CQ3",
+    "quantity": 2,
+    "quantityExecuted": 2,
+    "price": 44.97,
+    "payment": -89.94,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.26
+    },
+    "trades": [
+      {
+        "tradeId": "5014076080",
+        "date": "2021-07-03T00:26:09.233+03:00",
+        "quantity": 1,
+        "price": 44.97
+      },
+      {
+        "tradeId": "5014076070",
+        "date": "2021-07-03T00:26:09.233+03:00",
+        "quantity": 1,
+        "price": 44.97
+      }
+    ],
+    "status": "Done",
+    "id": "268936692900"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-07-02T19:24:31.094+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00HTN2CQ3",
+    "quantity": 2,
+    "quantityExecuted": 2,
+    "price": 44.91,
+    "payment": 89.82,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.26
+    },
+    "trades": [
+      {
+        "tradeId": "5010307300",
+        "date": "2021-07-02T19:24:31.094+03:00",
+        "quantity": 1,
+        "price": 44.91
+      },
+      {
+        "tradeId": "5010307290",
+        "date": "2021-07-02T19:24:31.094+03:00",
+        "quantity": 1,
+        "price": 44.91
+      }
+    ],
+    "status": "Done",
+    "id": "268808624690"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-02T18:23:10.957+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00HTN2CQ3",
+    "quantity": 2,
+    "quantityExecuted": 2,
+    "price": 46.14,
+    "payment": -92.28,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.28
+    },
+    "trades": [
+      {
+        "tradeId": "5008783210",
+        "date": "2021-07-02T18:23:10.957+03:00",
+        "quantity": 1,
+        "price": 46.14
+      },
+      {
+        "tradeId": "5008783200",
+        "date": "2021-07-02T18:23:10.957+03:00",
+        "quantity": 1,
+        "price": 46.14
+      }
+    ],
+    "status": "Done",
+    "id": "268763823450"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-07-02T15:07:06.062+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00HTN2CQ3",
+    "quantity": 2,
+    "quantityExecuted": 2,
+    "price": 53.95,
+    "payment": 107.9,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.32
+    },
+    "trades": [
+      {
+        "tradeId": "5001804030",
+        "date": "2021-07-02T15:07:06.062+03:00",
+        "quantity": 2,
+        "price": 53.95
+      }
+    ],
+    "status": "Done",
+    "id": "268575551480"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-07-02T13:50:06.268+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00HTN2CQ3",
+    "quantity": 2,
+    "quantityExecuted": 2,
+    "price": 56.68,
+    "payment": -113.36,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.34
+    },
+    "trades": [
+      {
+        "tradeId": "5000741040",
+        "date": "2021-07-02T13:50:06.268+03:00",
+        "quantity": 2,
+        "price": 56.68
+      }
+    ],
+    "status": "Done",
+    "id": "268554767300"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-07-02T10:27:19.789+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00HTN2CQ3",
+    "quantity": 2,
+    "quantityExecuted": 2,
+    "price": 58,
+    "payment": 116,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.34
+    },
+    "trades": [
+      {
+        "tradeId": "4995500510",
+        "date": "2021-07-02T10:27:19.789+03:00",
+        "quantity": 1,
+        "price": 58
+      },
+      {
+        "tradeId": "4995500500",
+        "date": "2021-07-02T10:27:19.789+03:00",
+        "quantity": 1,
+        "price": 58
+      }
+    ],
+    "status": "Done",
+    "id": "268466455380"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-06-30T21:57:24.69+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG003PHHZT1",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 235.6,
+    "payment": -235.6,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.71
+    },
+    "trades": [
+      {
+        "tradeId": "4969987090",
+        "date": "2021-06-30T21:57:24.69+03:00",
+        "quantity": 1,
+        "price": 235.6
+      }
+    ],
+    "status": "Done",
+    "id": "267831643710"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-06-30T21:28:01.747+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG003PHHZT1",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 232.84,
+    "payment": 232.84,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.7
+    },
+    "trades": [
+      {
+        "tradeId": "4969591080",
+        "date": "2021-06-30T21:28:01.747+03:00",
+        "quantity": 1,
+        "price": 232.84
+      }
+    ],
+    "status": "Done",
+    "id": "267813019650"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-06-30T14:08:50.98+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG003PHHZT1",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 238,
+    "payment": -238,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.71
+    },
+    "trades": [
+      {
+        "tradeId": "4959701360",
+        "date": "2021-06-30T14:08:50.98+03:00",
+        "quantity": 1,
+        "price": 238
+      }
+    ],
+    "status": "Done",
+    "id": "267470553690"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-06-30T12:20:55.911+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG003PHHZT1",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 235.52,
+    "payment": 235.52,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.71
+    },
+    "trades": [
+      {
+        "tradeId": "4958082590",
+        "date": "2021-06-30T12:20:55.911+03:00",
+        "quantity": 1,
+        "price": 235.52
+      }
+    ],
+    "status": "Done",
+    "id": "267424180080"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-06-29T22:39:57.895+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG000R7Z112",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 42.89,
+    "payment": -42.89,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.13
+    },
+    "trades": [
+      {
+        "tradeId": "4952809080",
+        "date": "2021-06-29T22:39:57.895+03:00",
+        "quantity": 1,
+        "price": 42.89
+      }
+    ],
+    "status": "Done",
+    "id": "267303707250"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-06-29T22:39:26.03+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG002NLDLV8",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 19.99,
+    "payment": 19.99,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.06
+    },
+    "trades": [
+      {
+        "tradeId": "4952798160",
+        "date": "2021-06-29T22:39:26.03+03:00",
+        "quantity": 1,
+        "price": 19.99
+      }
+    ],
+    "status": "Done",
+    "id": "267303395720"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-06-29T22:32:56.276+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG002WLDMW5",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 40.76,
+    "payment": -40.76,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.12
+    },
+    "trades": [
+      {
+        "tradeId": "4952665540",
+        "date": "2021-06-29T22:32:56.427+03:00",
+        "quantity": 1,
+        "price": 40.76
+      }
+    ],
+    "status": "Done",
+    "id": "267299683230"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-06-29T22:28:00.85+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG002NLDLV8",
+    "quantity": 4,
+    "quantityExecuted": 4,
+    "price": 19.98,
+    "payment": -79.92,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.24
+    },
+    "trades": [
+      {
+        "tradeId": "4952575180",
+        "date": "2021-06-29T22:28:00.85+03:00",
+        "quantity": 1,
+        "price": 19.98
+      },
+      {
+        "tradeId": "4952575200",
+        "date": "2021-06-29T22:28:00.85+03:00",
+        "quantity": 1,
+        "price": 19.98
+      },
+      {
+        "tradeId": "4952575190",
+        "date": "2021-06-29T22:28:00.85+03:00",
+        "quantity": 1,
+        "price": 19.98
+      },
+      {
+        "tradeId": "4952575170",
+        "date": "2021-06-29T22:28:00.85+03:00",
+        "quantity": 1,
+        "price": 19.98
+      }
+    ],
+    "status": "Done",
+    "id": "267296786290"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-06-29T22:19:06.796+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00HTN2CQ3",
+    "quantity": 2,
+    "quantityExecuted": 2,
+    "price": 46.91,
+    "payment": -93.82,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.28
+    },
+    "trades": [
+      {
+        "tradeId": "4952430730",
+        "date": "2021-06-29T22:19:06.796+03:00",
+        "quantity": 2,
+        "price": 46.91
+      }
+    ],
+    "status": "Done",
+    "id": "267292339490"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-06-29T21:57:51.407+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00ZGF7771",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 256.55,
+    "payment": -256.55,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.77
+    },
+    "trades": [
+      {
+        "tradeId": "4952058280",
+        "date": "2021-06-29T21:57:51.407+03:00",
+        "quantity": 1,
+        "price": 256.55
+      }
+    ],
+    "status": "Done",
+    "id": "267282008450"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-06-29T21:40:52.387+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00ZGF7771",
+    "quantity": 2,
+    "quantityExecuted": 2,
+    "price": 255.02,
+    "payment": 510.04,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -1.53
+    },
+    "trades": [
+      {
+        "tradeId": "4951611130",
+        "date": "2021-06-29T21:40:53.517+03:00",
+        "quantity": 2,
+        "price": 255.02
+      }
+    ],
+    "status": "Done",
+    "id": "267269603940"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-06-11T14:17:07.036+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A102EM7",
+    "quantity": 4,
+    "quantityExecuted": 4,
+    "price": 0.1,
+    "payment": -0.4,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4028422064",
+        "date": "2021-06-11T14:17:07.036+03:00",
+        "quantity": 4,
+        "price": 0.1004
+      }
+    ],
+    "status": "Done",
+    "id": "24359069249"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-06-11T14:16:51.028+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A102EQ8",
+    "quantity": 60,
+    "quantityExecuted": 60,
+    "price": 0.108167,
+    "payment": -6.49,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4028420821",
+        "date": "2021-06-11T14:16:51.028+03:00",
+        "quantity": 60,
+        "price": 0.1081
+      }
+    ],
+    "status": "Done",
+    "id": "24359063390"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-06-09T18:31:43.057+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00ZGF7771",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 225.3,
+    "payment": -225.3,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.68
+    },
+    "trades": [
+      {
+        "tradeId": "4696777590",
+        "date": "2021-06-09T18:31:43.057+03:00",
+        "quantity": 1,
+        "price": 225.3
+      }
+    ],
+    "status": "Done",
+    "id": "258663618820"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-06-09T18:31:00+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 20,
+    "quantityExecuted": 20,
+    "price": 72.33,
+    "payment": -1446.6,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -4.34
+    },
+    "trades": [
+      {
+        "tradeId": "342917255",
+        "date": "2021-06-09T18:31:00.202+03:00",
+        "quantity": 20,
+        "price": 72.33
+      }
+    ],
+    "status": "Done",
+    "id": "21870274584"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-06-09T18:30:31+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 20,
+    "quantityExecuted": 20,
+    "price": 72.325,
+    "payment": -1446.5,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -4.34
+    },
+    "trades": [
+      {
+        "tradeId": "342917050",
+        "date": "2021-06-09T18:30:31.603+03:00",
+        "quantity": 20,
+        "price": 72.325
+      }
+    ],
+    "status": "Done",
+    "id": "21870271164"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-06-09T18:30:00+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 100,
+    "quantityExecuted": 100,
+    "price": 72.29,
+    "payment": -7229,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -21.69
+    },
+    "trades": [
+      {
+        "tradeId": "342916827",
+        "date": "2021-06-09T18:30:00.046+03:00",
+        "quantity": 100,
+        "price": 72.29
+      }
+    ],
+    "status": "Done",
+    "id": "21870267909"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-06-09T18:29:32.771+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Bond",
+    "figi": "BBG00Q58ZXF2",
+    "quantity": 10,
+    "quantityExecuted": 10,
+    "price": 1009.15,
+    "payment": 10167,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -30.27
+    },
+    "trades": [
+      {
+        "tradeId": "4021104266",
+        "date": "2021-06-09T18:29:32.771+03:00",
+        "quantity": 4,
+        "price": 1010.1
+      },
+      {
+        "tradeId": "4021104269",
+        "date": "2021-06-09T18:29:32.771+03:00",
+        "quantity": 4,
+        "price": 1008.2
+      },
+      {
+        "tradeId": "4021104268",
+        "date": "2021-06-09T18:29:32.771+03:00",
+        "quantity": 1,
+        "price": 1008.3
+      },
+      {
+        "tradeId": "4021104267",
+        "date": "2021-06-09T18:29:32.771+03:00",
+        "quantity": 1,
+        "price": 1010
+      }
+    ],
+    "status": "Done",
+    "id": "24330571370"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-06-09T18:26:07+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 90,
+    "quantityExecuted": 90,
+    "price": 72.297556,
+    "payment": -6506.78,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -19.52
+    },
+    "trades": [
+      {
+        "tradeId": "342915977",
+        "date": "2021-06-09T18:26:07.437+03:00",
+        "quantity": 90,
+        "price": 72.2975
+      }
+    ],
+    "status": "Done",
+    "id": "21870256475"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-06-09T18:25:34+03:00",
+    "isMarginCall": false,
+    "payment": 6500,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1231139226"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-06-08T12:32:03.812+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG003PHHZT1",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 223.11,
+    "payment": -223.11,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.67
+    },
+    "trades": [
+      {
+        "tradeId": "4660999100",
+        "date": "2021-06-08T12:32:03.812+03:00",
+        "quantity": 1,
+        "price": 223.11
+      }
+    ],
+    "status": "Done",
+    "id": "257795179890"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-06-08T12:31:24.189+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00ZGF7771",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 227.35,
+    "payment": 227.35,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.68
+    },
+    "trades": [
+      {
+        "tradeId": "4660988760",
+        "date": "2021-06-08T12:31:24.189+03:00",
+        "quantity": 1,
+        "price": 227.35
+      }
+    ],
+    "status": "Done",
+    "id": "257794965540"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-06-03T11:27:30.899+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A102EQ8",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 0.11,
+    "payment": -0.11,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4003396155",
+        "date": "2021-06-03T11:27:30.899+03:00",
+        "quantity": 1,
+        "price": 0.1069
+      }
+    ],
+    "status": "Done",
+    "id": "24244511805"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-06-03T11:26:54.636+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A102EQ8",
+    "quantity": 9,
+    "quantityExecuted": 9,
+    "price": 0.106667,
+    "payment": -0.96,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4003394212",
+        "date": "2021-06-03T11:26:54.636+03:00",
+        "quantity": 9,
+        "price": 0.1069
+      }
+    ],
+    "status": "Done",
+    "id": "24244500182"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-06-03T11:25:58+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 73.24,
+    "payment": -73.24,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -0.22
+    },
+    "trades": [
+      {
+        "tradeId": "340228703",
+        "date": "2021-06-03T11:25:58.602+03:00",
+        "quantity": 1,
+        "price": 73.2425
+      }
+    ],
+    "status": "Done",
+    "id": "21848116303"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-06-03T10:54:50.752+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG004S681W1",
+    "quantity": 10,
+    "quantityExecuted": 10,
+    "price": 340.5,
+    "payment": -3405,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -10.22
+    },
+    "trades": [
+      {
+        "tradeId": "4003253012",
+        "date": "2021-06-03T10:54:50.752+03:00",
+        "quantity": 10,
+        "price": 340.5
+      }
+    ],
+    "status": "Done",
+    "id": "24243536451"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-06-03T10:54:24.336+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Bond",
+    "figi": "BBG00NHJGKN2",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 990.7,
+    "payment": 1011.8,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -2.97
+    },
+    "trades": [
+      {
+        "tradeId": "4003250387",
+        "date": "2021-06-03T10:54:24.336+03:00",
+        "quantity": 1,
+        "price": 990.7
+      }
+    ],
+    "status": "Done",
+    "id": "24243523151"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-06-03T10:52:42+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 3,
+    "quantityExecuted": 3,
+    "price": 73.286667,
+    "payment": 219.86,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -0.66
+    },
+    "trades": [
+      {
+        "tradeId": "340195392",
+        "date": "2021-06-03T10:52:42.864+03:00",
+        "quantity": 3,
+        "price": 73.285
+      }
+    ],
+    "status": "Done",
+    "id": "21847768810"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-06-03T10:49:51.298+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG004S681W1",
+    "quantity": 10,
+    "quantityExecuted": 10,
+    "price": 341,
+    "payment": -3410,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -10.23
+    },
+    "trades": [
+      {
+        "tradeId": "4003223254",
+        "date": "2021-06-03T10:49:51.298+03:00",
+        "quantity": 10,
+        "price": 341
+      }
+    ],
+    "status": "Done",
+    "id": "24243368138"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-06-03T10:48:18.214+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Bond",
+    "figi": "BBG000000008",
+    "quantity": 6,
+    "quantityExecuted": 6,
+    "price": 922.935,
+    "payment": 5690.31,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -16.61
+    },
+    "trades": [
+      {
+        "tradeId": "4003215278",
+        "date": "2021-06-03T10:48:18.214+03:00",
+        "quantity": 1,
+        "price": 922.86
+      },
+      {
+        "tradeId": "4003215277",
+        "date": "2021-06-03T10:48:18.214+03:00",
+        "quantity": 5,
+        "price": 922.95
+      }
+    ],
+    "status": "Done",
+    "id": "24243319800"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-06-01T21:49:02+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 3,
+    "quantityExecuted": 3,
+    "price": 73.513333,
+    "payment": -220.54,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -0.66
+    },
+    "trades": [
+      {
+        "tradeId": "339616469",
+        "date": "2021-06-01T21:49:02.115+03:00",
+        "quantity": 3,
+        "price": 73.5125
+      }
+    ],
+    "status": "Done",
+    "id": "21841120738"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-05-19T14:22:56+03:00",
+    "isMarginCall": false,
+    "payment": 30,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1144421430"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-05-19T14:21:29.626+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A102EQ8",
+    "quantity": 38,
+    "quantityExecuted": 38,
+    "price": 0.103421,
+    "payment": -3.93,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "3956273822",
+        "date": "2021-05-19T14:21:29.626+03:00",
+        "quantity": 38,
+        "price": 0.1035
+      }
+    ],
+    "status": "Done",
+    "id": "24052102310"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-05-19T13:56:42.837+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00ZGF7771",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 229.48,
+    "payment": -229.48,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -0.69
+    },
+    "trades": [
+      {
+        "tradeId": "4428148860",
+        "date": "2021-05-19T13:56:42.837+03:00",
+        "quantity": 1,
+        "price": 229.48
+      }
+    ],
+    "status": "Done",
+    "id": "249059765890"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-05-19T11:29:44+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 230,
+    "quantityExecuted": 230,
+    "price": 73.8,
+    "payment": -16974,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -50.92
+    },
+    "trades": [
+      {
+        "tradeId": "334773816",
+        "date": "2021-05-19T11:29:44.055+03:00",
+        "quantity": 230,
+        "price": 73.8
+      }
+    ],
+    "status": "Done",
+    "id": "21787653170"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-05-19T11:29:43+03:00",
+    "isMarginCall": false,
+    "payment": 17024.93,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1143310825"
+  },
+  {
+    "operationType": "Coupon",
+    "date": "2021-05-17T06:00:00+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Bond",
+    "figi": "BBG00Q58ZXF2",
+    "payment": 236.8,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1129847971"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-05-10T19:01:41.676+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00ZGF7771",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 285.36,
+    "payment": -285.36,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4330146150",
+        "date": "2021-05-10T19:01:41.676+03:00",
+        "quantity": 1,
+        "price": 285.36
+      }
+    ],
+    "status": "Done",
+    "id": "243666670350"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-05-10T19:01:01+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 30,
+    "quantityExecuted": 30,
+    "price": 74.117667,
+    "payment": -2223.53,
+    "currency": "RUB",
+    "trades": [
+      {
+        "tradeId": "331625905",
+        "date": "2021-05-10T19:01:01.265+03:00",
+        "quantity": 30,
+        "price": 74.1175
+      }
+    ],
+    "status": "Done",
+    "id": "21744100656"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-05-10T19:01:00+03:00",
+    "isMarginCall": false,
+    "payment": 2223.53,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1111816400"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-05-10T18:58:56.697+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00ZGF7771",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 283.25,
+    "payment": -283.25,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4330101990",
+        "date": "2021-05-10T18:58:56.697+03:00",
+        "quantity": 1,
+        "price": 283.25
+      }
+    ],
+    "status": "Done",
+    "id": "243663498090"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-05-10T17:41:06.567+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00ZGF7771",
+    "quantity": 2,
+    "quantityExecuted": 2,
+    "price": 271.04,
+    "payment": 542.08,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4328147930",
+        "date": "2021-05-10T17:41:06.567+03:00",
+        "quantity": 1,
+        "price": 271.04
+      },
+      {
+        "tradeId": "4328147940",
+        "date": "2021-05-10T17:41:06.567+03:00",
+        "quantity": 1,
+        "price": 271.04
+      }
+    ],
+    "status": "Done",
+    "id": "243543226440"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-05-06T22:43:08.873+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00ZGF7771",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 258.42,
+    "payment": -258.42,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4301216590",
+        "date": "2021-05-06T22:43:08.873+03:00",
+        "quantity": 1,
+        "price": 258.42
+      }
+    ],
+    "status": "Done",
+    "id": "242491517920"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-05-06T22:43:01.62+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00ZGF7771",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 258.43,
+    "payment": -258.43,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4301214470",
+        "date": "2021-05-06T22:43:01.62+03:00",
+        "quantity": 1,
+        "price": 258.43
+      }
+    ],
+    "status": "Done",
+    "id": "242491331250"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-05-06T22:42:53.189+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00ZGF7771",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 258.3,
+    "payment": 258.3,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4301212140",
+        "date": "2021-05-06T22:42:53.189+03:00",
+        "quantity": 1,
+        "price": 258.3
+      }
+    ],
+    "status": "Done",
+    "id": "242491169300"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-05-06T22:42:36.71+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00ZGF7771",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 258.26,
+    "payment": 258.26,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4301206990",
+        "date": "2021-05-06T22:42:36.71+03:00",
+        "quantity": 1,
+        "price": 258.26
+      }
+    ],
+    "status": "Done",
+    "id": "242490937730"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-05-04T17:36:38.148+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A102EQ8",
+    "quantity": 30,
+    "quantityExecuted": 30,
+    "price": 0.105,
+    "payment": -3.15,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "3898867150",
+        "date": "2021-05-04T17:36:38.148+03:00",
+        "quantity": 30,
+        "price": 0.1049
+      }
+    ],
+    "status": "Done",
+    "id": "23828460232"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-05-04T10:35:08.371+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00ZGF7771",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 292.16,
+    "payment": -292.16,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4259105880",
+        "date": "2021-05-04T10:35:08.371+03:00",
+        "quantity": 1,
+        "price": 292.16
+      }
+    ],
+    "status": "Done",
+    "id": "240487201830"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-05-04T10:32:33+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 6,
+    "quantityExecuted": 6,
+    "price": 75.29,
+    "payment": -451.74,
+    "currency": "RUB",
+    "trades": [
+      {
+        "tradeId": "329515195",
+        "date": "2021-05-04T10:32:33.285+03:00",
+        "quantity": 6,
+        "price": 75.29
+      }
+    ],
+    "status": "Done",
+    "id": "21718088680"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-05-04T10:32:32+03:00",
+    "isMarginCall": false,
+    "payment": 451.74,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1086343235"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-05-04T10:30:30.725+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00ZGF7771",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 292.24,
+    "payment": -292.24,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4259065810",
+        "date": "2021-05-04T10:30:30.725+03:00",
+        "quantity": 1,
+        "price": 292.24
+      }
+    ],
+    "status": "Done",
+    "id": "240483582170"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-05-04T10:21:23.648+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00ZGF7771",
+    "quantity": 2,
+    "quantityExecuted": 2,
+    "price": 291.24,
+    "payment": 582.48,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4258980890",
+        "date": "2021-05-04T10:21:23.648+03:00",
+        "quantity": 2,
+        "price": 291.24
+      }
+    ],
+    "status": "Done",
+    "id": "240477313060"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-04-28T10:44:42.247+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A102EM7",
+    "quantity": 9,
+    "quantityExecuted": 9,
+    "price": 0.102222,
+    "payment": -0.92,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "3879119197",
+        "date": "2021-04-28T10:44:42.247+03:00",
+        "quantity": 9,
+        "price": 0.1018
+      }
+    ],
+    "status": "Done",
+    "id": "23752917204"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-04-27T20:38:52.085+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00ZGF7771",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 302.7,
+    "payment": -302.7,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4198439340",
+        "date": "2021-04-27T20:38:52.085+03:00",
+        "quantity": 1,
+        "price": 302.7
+      }
+    ],
+    "status": "Done",
+    "id": "238382783550"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-04-27T20:38:29+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 74.91,
+    "payment": -74.91,
+    "currency": "RUB",
+    "trades": [
+      {
+        "tradeId": "327904278",
+        "date": "2021-04-27T20:38:29.213+03:00",
+        "quantity": 1,
+        "price": 74.9075
+      }
+    ],
+    "status": "Done",
+    "id": "21698835989"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-04-27T20:38:28+03:00",
+    "isMarginCall": false,
+    "payment": 74.91,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1064948438"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-04-27T20:37:18.184+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00ZGF7771",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 302.4,
+    "payment": 302.4,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4198421940",
+        "date": "2021-04-27T20:37:18.184+03:00",
+        "quantity": 1,
+        "price": 302.4
+      }
+    ],
+    "status": "Done",
+    "id": "238381745970"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-04-27T20:05:09.286+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00ZGF7771",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 302.43,
+    "payment": -302.43,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4198036670",
+        "date": "2021-04-27T20:05:09.286+03:00",
+        "quantity": 1,
+        "price": 302.43
+      }
+    ],
+    "status": "Done",
+    "id": "238352696270"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-04-27T20:04:49.824+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00ZGF7771",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 302.24,
+    "payment": 302.24,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4198031220",
+        "date": "2021-04-27T20:04:49.824+03:00",
+        "quantity": 1,
+        "price": 302.24
+      }
+    ],
+    "status": "Done",
+    "id": "238352232790"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-04-27T12:32:01.956+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A102EM7",
+    "quantity": 30,
+    "quantityExecuted": 30,
+    "price": 0.102333,
+    "payment": -3.07,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "3873700617",
+        "date": "2021-04-27T12:32:01.956+03:00",
+        "quantity": 30,
+        "price": 0.1022
+      }
+    ],
+    "status": "Done",
+    "id": "23737583290"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-04-27T11:08:00.655+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A102EM7",
+    "quantity": 100,
+    "quantityExecuted": 100,
+    "price": 0.1022,
+    "payment": -10.22,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "3873350487",
+        "date": "2021-04-27T11:08:00.655+03:00",
+        "quantity": 100,
+        "price": 0.1022
+      }
+    ],
+    "status": "Done",
+    "id": "23735344377"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-04-27T11:06:24.802+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A102EQ8",
+    "quantity": 250,
+    "quantityExecuted": 250,
+    "price": 0.10632,
+    "payment": -26.58,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "3873343158",
+        "date": "2021-04-27T11:06:24.802+03:00",
+        "quantity": 250,
+        "price": 0.1063
+      }
+    ],
+    "status": "Done",
+    "id": "23735295053"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-04-27T09:34:16+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 39,
+    "quantityExecuted": 39,
+    "price": 75.07,
+    "payment": -2927.73,
+    "currency": "RUB",
+    "trades": [
+      {
+        "tradeId": "327555757",
+        "date": "2021-04-27T09:34:16.579+03:00",
+        "quantity": 39,
+        "price": 75.07
+      }
+    ],
+    "status": "Done",
+    "id": "21694095911"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-04-27T09:34:16+03:00",
+    "isMarginCall": false,
+    "payment": 2927.73,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1061427883"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-04-27T09:32:58+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 75.05,
+    "payment": -75.05,
+    "currency": "RUB",
+    "trades": [
+      {
+        "tradeId": "327555485",
+        "date": "2021-04-27T09:32:58.613+03:00",
+        "quantity": 1,
+        "price": 75.05
+      }
+    ],
+    "status": "Done",
+    "id": "21694086987"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-04-27T09:32:58+03:00",
+    "isMarginCall": false,
+    "payment": 75.05,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1061426416"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-04-20T13:06:13.306+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A102EQ8",
+    "quantity": 881,
+    "quantityExecuted": 881,
+    "price": 0.105199,
+    "payment": -92.68,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "3843680916",
+        "date": "2021-04-20T13:06:13.306+03:00",
+        "quantity": 881,
+        "price": 0.1052
+      }
+    ],
+    "status": "Done",
+    "id": "23639868800"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-04-20T13:05:37+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 93,
+    "quantityExecuted": 93,
+    "price": 76.257527,
+    "payment": -7091.95,
+    "currency": "RUB",
+    "trades": [
+      {
+        "tradeId": "324875939",
+        "date": "2021-04-20T13:05:37.467+03:00",
+        "quantity": 93,
+        "price": 76.2575
+      }
+    ],
+    "status": "Done",
+    "id": "21660683050"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-04-20T13:05:12.75+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Bond",
+    "figi": "BBG00NHJGKN2",
+    "quantity": 7,
+    "quantityExecuted": 7,
+    "price": 998.528571,
+    "payment": 7072.37,
+    "currency": "RUB",
+    "trades": [
+      {
+        "tradeId": "3843675993",
+        "date": "2021-04-20T13:05:12.75+03:00",
+        "quantity": 1,
+        "price": 998.1
+      },
+      {
+        "tradeId": "3843675994",
+        "date": "2021-04-20T13:05:12.75+03:00",
+        "quantity": 1,
+        "price": 997.8
+      },
+      {
+        "tradeId": "3843675995",
+        "date": "2021-04-20T13:05:12.75+03:00",
+        "quantity": 1,
+        "price": 997.6
+      },
+      {
+        "tradeId": "3843675992",
+        "date": "2021-04-20T13:05:12.75+03:00",
+        "quantity": 2,
+        "price": 999
+      },
+      {
+        "tradeId": "3843675991",
+        "date": "2021-04-20T13:05:12.75+03:00",
+        "quantity": 2,
+        "price": 999.1
+      }
+    ],
+    "status": "Done",
+    "id": "23639843738"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-04-20T12:29:45.747+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A102EQ8",
+    "quantity": 36,
+    "quantityExecuted": 36,
+    "price": 0.105278,
+    "payment": -3.79,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "3843549770",
+        "date": "2021-04-20T12:29:45.747+03:00",
+        "quantity": 36,
+        "price": 0.1054
+      }
+    ],
+    "status": "Done",
+    "id": "23638805886"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-04-20T12:29:27.612+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A102EM7",
+    "quantity": 600,
+    "quantityExecuted": 600,
+    "price": 0.0971,
+    "payment": -58.26,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "3843549015",
+        "date": "2021-04-20T12:29:27.612+03:00",
+        "quantity": 600,
+        "price": 0.0971
+      }
+    ],
+    "status": "Done",
+    "id": "23638798597"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-04-20T12:28:17+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 62,
+    "quantityExecuted": 62,
+    "price": 76.182581,
+    "payment": -4723.32,
+    "currency": "RUB",
+    "trades": [
+      {
+        "tradeId": "324864051",
+        "date": "2021-04-20T12:28:17.061+03:00",
+        "quantity": 62,
+        "price": 76.1825
+      }
+    ],
+    "status": "Done",
+    "id": "21660247954"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-04-20T12:26:46.205+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Etf",
+    "figi": "TCS00A102EQ8",
+    "quantity": 18,
+    "quantityExecuted": 18,
+    "price": 0.105556,
+    "payment": -1.9,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "3843539637",
+        "date": "2021-04-20T12:26:46.205+03:00",
+        "quantity": 18,
+        "price": 0.1054
+      }
+    ],
+    "status": "Done",
+    "id": "23638709136"
+  },
+  {
+    "operationType": "Sell",
+    "date": "2021-04-20T12:25:14.591+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Bond",
+    "figi": "BBG000000008",
+    "quantity": 5,
+    "quantityExecuted": 5,
+    "price": 930.42,
+    "payment": 4714.25,
+    "currency": "RUB",
+    "trades": [
+      {
+        "tradeId": "3843531203",
+        "date": "2021-04-20T12:25:14.591+03:00",
+        "quantity": 5,
+        "price": 930.42
+      }
+    ],
+    "status": "Done",
+    "id": "23638641622"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-04-19T19:51:56.996+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG000QXWHD1",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 208.97,
+    "payment": -208.97,
+    "currency": "USD",
+    "trades": [
+      {
+        "tradeId": "4115080820",
+        "date": "2021-04-19T19:51:57.2+03:00",
+        "quantity": 1,
+        "price": 208.97
+      }
+    ],
+    "status": "Done",
+    "id": "234440441170"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-04-19T19:51:31+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 210,
+    "quantityExecuted": 210,
+    "price": 76.32,
+    "payment": -16027.2,
+    "currency": "RUB",
+    "trades": [
+      {
+        "tradeId": "324507359",
+        "date": "2021-04-19T19:51:31.708+03:00",
+        "quantity": 210,
+        "price": 76.32
+      }
+    ],
+    "status": "Done",
+    "id": "21656925596"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-04-19T19:51:31+03:00",
+    "isMarginCall": false,
+    "payment": 16027.2,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1034197724"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-04-16T22:54:30.281+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00ZGF7771",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 338.29,
+    "payment": -338.29,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -1.01
+    },
+    "trades": [
+      {
+        "tradeId": "4102159020",
+        "date": "2021-04-16T22:54:30.281+03:00",
+        "quantity": 1,
+        "price": 338.29
+      }
+    ],
+    "status": "Done",
+    "id": "233962906870"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-04-16T22:54:04+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 340,
+    "quantityExecuted": 340,
+    "price": 75.7475,
+    "payment": -25754.15,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -77.26
+    },
+    "trades": [
+      {
+        "tradeId": "324036313",
+        "date": "2021-04-16T22:54:04.922+03:00",
+        "quantity": 340,
+        "price": 75.7475
+      }
+    ],
+    "status": "Done",
+    "id": "21650526144"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-04-16T22:54:04+03:00",
+    "isMarginCall": false,
+    "payment": 25831.42,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1026531391"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-04-16T19:48:19.168+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Stock",
+    "figi": "BBG00ZGF7771",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 339.73,
+    "payment": -339.73,
+    "currency": "USD",
+    "commission": {
+      "currency": "USD",
+      "value": -1.02
+    },
+    "trades": [
+      {
+        "tradeId": "4100090170",
+        "date": "2021-04-16T19:48:19.168+03:00",
+        "quantity": 1,
+        "price": 339.73
+      }
+    ],
+    "status": "Done",
+    "id": "233819809460"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-04-16T19:47:53+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 1,
+    "quantityExecuted": 1,
+    "price": 75.83,
+    "payment": -75.83,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -0.23
+    },
+    "trades": [
+      {
+        "tradeId": "323987656",
+        "date": "2021-04-16T19:47:53.5+03:00",
+        "quantity": 1,
+        "price": 75.825
+      }
+    ],
+    "status": "Done",
+    "id": "21650273106"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-04-16T19:47:53+03:00",
+    "isMarginCall": false,
+    "payment": 76.06,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1026114215"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-04-16T19:46:01+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Currency",
+    "figi": "BBG0013HGFT4",
+    "quantity": 340,
+    "quantityExecuted": 340,
+    "price": 75.83,
+    "payment": -25782.2,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -77.35
+    },
+    "trades": [
+      {
+        "tradeId": "323987428",
+        "date": "2021-04-16T19:46:01.193+03:00",
+        "quantity": 340,
+        "price": 75.83
+      }
+    ],
+    "status": "Done",
+    "id": "21650270548"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-04-16T19:46:00+03:00",
+    "isMarginCall": false,
+    "payment": 25859.55,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1026103440"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-04-15T11:02:20.714+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Bond",
+    "figi": "BBG00Q58ZXF2",
+    "quantity": 8,
+    "quantityExecuted": 8,
+    "price": 1012.4,
+    "payment": -8234.56,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -24.3
+    },
+    "trades": [
+      {
+        "tradeId": "3825276991",
+        "date": "2021-04-15T11:02:20.714+03:00",
+        "quantity": 4,
+        "price": 1012.4
+      },
+      {
+        "tradeId": "3825276990",
+        "date": "2021-04-15T11:02:20.714+03:00",
+        "quantity": 1,
+        "price": 1012.4
+      },
+      {
+        "tradeId": "3825276992",
+        "date": "2021-04-15T11:02:20.714+03:00",
+        "quantity": 3,
+        "price": 1012.4
+      }
+    ],
+    "status": "Done",
+    "id": "23581337696"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-04-15T10:59:12.803+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Bond",
+    "figi": "BBG00Q58ZXF2",
+    "quantity": 10,
+    "quantityExecuted": 2,
+    "price": 1012.3,
+    "payment": -2058.44,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -6.07
+    },
+    "trades": [
+      {
+        "tradeId": "3825264009",
+        "date": "2021-04-15T10:59:12.803+03:00",
+        "quantity": 2,
+        "price": 1012.3
+      }
+    ],
+    "status": "Done",
+    "id": "23581219577"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-04-15T10:59:12+03:00",
+    "isMarginCall": false,
+    "payment": 10322.57,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1018457212"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-04-15T10:16:05.181+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Bond",
+    "figi": "BBG00NHJGKN2",
+    "quantity": 20,
+    "quantityExecuted": 20,
+    "price": 995,
+    "payment": -20115.2,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -59.7
+    },
+    "trades": [
+      {
+        "tradeId": "3825042536",
+        "date": "2021-04-15T10:16:05.181+03:00",
+        "quantity": 20,
+        "price": 995
+      }
+    ],
+    "status": "Done",
+    "id": "23579550213"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-04-15T10:16:04+03:00",
+    "isMarginCall": false,
+    "payment": 20194.96,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1018173765"
+  },
+  {
+    "operationType": "Buy",
+    "date": "2021-04-15T10:11:56.305+03:00",
+    "isMarginCall": false,
+    "instrumentType": "Bond",
+    "figi": "BBG000000008",
+    "quantity": 11,
+    "quantityExecuted": 11,
+    "price": 932.4,
+    "payment": -10376.85,
+    "currency": "RUB",
+    "commission": {
+      "currency": "RUB",
+      "value": -30.77
+    },
+    "trades": [
+      {
+        "tradeId": "3825009712",
+        "date": "2021-04-15T10:11:56.305+03:00",
+        "quantity": 11,
+        "price": 932.4
+      }
+    ],
+    "status": "Done",
+    "id": "23579256145"
+  },
+  {
+    "operationType": "PayIn",
+    "date": "2021-04-15T10:11:55+03:00",
+    "isMarginCall": false,
+    "payment": 10438.41,
+    "currency": "RUB",
+    "status": "Done",
+    "id": "1018140855"
+  }
+]
