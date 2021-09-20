@@ -1,32 +1,34 @@
 {
-  "exclude": [
-    "node_modules",
-    "build",
-  ],
-  "include": [
-    "src/**/*"
-  ],
   "compilerOptions": {
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "outDir": "build/esm",
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "sourceMap": true,
+    "strict": true,
+    "module": "esnext",
+    "target": "es2018",
     "rootDir": "src",
-    "outDir": "build",
-    "module": "commonjs",
-    "target": "es6",
     "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "esModuleInterop": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "resolveJsonModule": true,
     "isolatedModules": true,
-    "lib": ["es6"],
-    "typeRoots": [
-      "./src/types",
-      "./node_modules/@types",
-    ]
-  }
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "src/"
+  ]
 }

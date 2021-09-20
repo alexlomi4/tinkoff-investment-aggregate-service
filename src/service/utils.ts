@@ -5,10 +5,7 @@ import {
   Operation,
   PortfolioPosition,
 } from 'tinkoff-investment-js-client-api';
-import {
-  PortfolioPositionMap,
-  PositionWithPrices,
-} from '../types/InvestmentService';
+import { PortfolioPositionMap, PositionWithPrices } from '../types/model';
 
 export function instrumentToEmptyPosition(
   { figi, ticker, isin, type, name }: MarketInstrument,
@@ -115,19 +112,19 @@ export function convertPositionsWithPrice(
     const { operationsTotal, buyCost } = getInstrumentOperationsCost(
       operationsForPosition
     );
-    const instrumentQuantity = getPositionQuantity(
+    const balancePotential = getPositionQuantity(
       position,
       operationsForPosition
     );
 
-    const totalNet = operationsTotal + (lastPrice || 0) * instrumentQuantity;
+    const totalProfit = operationsTotal + (lastPrice || 0) * balancePotential;
     return {
       ...position,
       lastPrice,
-      totalNet,
-      buyCost,
-      operationsTotal,
-      instrumentQuantity,
+      totalProfit,
+      buyAndTaxesLoss: buyCost,
+      operationsProfit: operationsTotal,
+      balancePotential,
       currency:
         position.averagePositionPrice && position.averagePositionPrice.currency,
     };
@@ -135,13 +132,13 @@ export function convertPositionsWithPrice(
 
   return updatedPositions.map((position) => {
     const totalInstrumentNet = updatedPositions.reduce(
-      (sum, { totalNet }) => totalNet + sum,
+      (sum, { totalProfit }) => totalProfit + sum,
       0
     );
-    const netPercent = Math.abs(100 * (totalInstrumentNet / buyTotalPrice));
+    const profitPercent = Math.abs(100 * (totalInstrumentNet / buyTotalPrice));
     return {
       ...position,
-      netPercent,
+      profitPercent,
     };
   });
 }

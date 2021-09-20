@@ -13,7 +13,7 @@ import {
   PortfolioPositionMap,
   PositionMapWithPrices,
   Totals,
-} from '../types/InvestmentService';
+} from '../types/model';
 import {
   convertPositionsWithPrice,
   currencyPositionToPortfolioPosition,
@@ -58,7 +58,6 @@ type OperationWithFigi = Operation & { figi: string };
 
 async function getHistoricPositionsInfo(
   api: CustomApi,
-  positionMap: PortfolioPositionMap,
   historicOperations: OperationWithFigi[][],
   currenciesInfo: CurrencyInfo[]
 ) {
@@ -269,12 +268,7 @@ class InvestmentService {
         .concat(...historicOperations)
         .map(({ currency }) => currency)
     );
-    return getHistoricPositionsInfo(
-      api,
-      positionMap,
-      historicOperations,
-      currenciesInfo
-    );
+    return getHistoricPositionsInfo(api, historicOperations, currenciesInfo);
   }
 
   static async getCurrenciesInfo(

@@ -2,12 +2,12 @@
   "name": "tinkoff-investment-aggregate-service",
   "version": "1.0.0",
   "description": "Service to aggregate investment statistics",
-  "main": "./build/service/InvestmentService.js",
-  "types": "./build/types/InvestmentService.d.ts",
+  "main": "./build/cjs/index.js",
+  "module": "./build/esm/index.js",
   "scripts": {
-    "prepare": "npm run build && npm run copy-files",
-    "build": "tsc",
-    "copy-files": "copyfiles -u 1 src/types/InvestmentService.d.ts build",
+    "prepare": "npm run build",
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+    "copy-files": "copyfiles -u 1 src/types/model.ts build",
     "lint": "eslint . --ext .ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,7 +17,7 @@
   },
   "author": "alexlomi4",
   "dependencies": {
-    "tinkoff-investment-js-client-api": "git+https://github.com/alexlomi4/tinkoff-investment-js-client-api.git"
+    "tinkoff-investment-js-client-api": "^1.5.0"
   },
   "devDependencies": {
     "@types/jest": "^27.0.1",
