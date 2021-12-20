@@ -1,29 +1,29 @@
-import { Currency, PortfolioPosition } from 'tinkoff-investment-js-client-api';
+import {
+  Currency,
+  CurrencyPosition,
+  PortfolioPosition,
+} from 'tinkoff-investment-js-client-api';
+
+export type PortfolioPositionWithPrice = PortfolioPosition & {
+  lastPrice?: number;
+  currency?: Currency;
+};
 
 export type InstrumentPriceInfo = {
   lastPrice?: number;
   figi: string;
 };
 
-export type PositionWithCurrency = PortfolioPosition & {
-  currency?: Currency;
-};
-
-export type PositionWithPrices = PositionWithCurrency & {
-  lastPrice?: number;
+export type PositionPrices = {
   totalProfit: number;
-  profitPercent: number;
-  buyAndTaxesLoss: number;
-  operationsProfit: number;
-  notSoldCurrencyQuantity: number;
-  currency?: Currency;
+  buyAndTaxesTotal: number;
+  operationsTotal: number;
 };
 
-type PositionMap<T extends PositionWithCurrency> = {
-  [figi: string]: T[];
-};
+export type PortfolioPositionWithTotalPrices = PortfolioPositionWithPrice &
+  PositionPrices;
 
-export type PortfolioPositionMap = PositionMap<PositionWithCurrency>;
+export type CurrencyPositionWithPrices = CurrencyPosition & PositionPrices;
 
 export type Totals = {
   payIn: number;

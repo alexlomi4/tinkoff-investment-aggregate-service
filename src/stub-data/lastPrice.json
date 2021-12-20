@@ -1,8 +1,10 @@
-{
-  "BBG0013HGFT4": {
+[
+  {
+    "figi": "BBG0013HGFT4",
     "lastPrice": 73.425
   },
-  "BBG0013HJJ31": {
+  {
+    "figi": "BBG0013HJJ31",
     "lastPrice": 86.08
   }
-}
+]

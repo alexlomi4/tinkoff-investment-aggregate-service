@@ -3,7 +3,7 @@ const DEFAULT_TTL = MS_IN_SEC * 60;
 
 const PROMISE_MAP: { [key: string]: Promise<any> } = {};
 
-class CacheHelper {
+class CacheStorage {
   static withPromiseCache<T>(
     asyncFunc: () => Promise<T>,
     key: string,
@@ -22,4 +22,4 @@ class CacheHelper {
   }
 }
 
-export default CacheHelper;
+export default CacheStorage;

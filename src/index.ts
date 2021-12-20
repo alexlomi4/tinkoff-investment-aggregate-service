@@ -1,7 +1,12 @@
-import InvestmentService from './service/InvestmentService';
+import InvestmentServiceToken, {
+  InvestmentServiceStub,
+  InvestmentService,
+} from './service/InvestmentServiceToken';
+import { getUniqueFigiInfoByCurrency } from './service/utils/currency-utils';
+import OpenAPIProxy from './api/OpenAPIProxy';
 
-import CustomApi from './service/CustomApi';
+export default InvestmentServiceToken;
+export { InvestmentServiceStub, OpenAPIProxy, getUniqueFigiInfoByCurrency };
 
-export default InvestmentService;
-export { CustomApi };
 export * from './types/model';
+export type { InvestmentService };
